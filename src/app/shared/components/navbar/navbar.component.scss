@@ -1,33 +1,49 @@
 @use './../../../shared/breakpoints.scss' as bp;
 
-.navbar-container {
+.main-container {
     position: relative;
     width: auto;
-    height: 85vh;
+    height: 100vh;
+    width: 100%;
 }
 
-nav {
+.navbar-container {
     z-index: 500;
     position: absolute;
-    top: 0;
+    top: 92px;
     right: 0;
     bottom: 0;
     left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+nav {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    align-items: center;    
     font-family: 'Syne', sans-serif;
     font-weight: 700;
     // font-size: 96px;
     font-size: 40px;
+    @include bp.sm {
+        font-size: 50px;
+    }
     @include bp.md {
         font-size: 60px;
     }
+    @include bp.lg {
+        font-size: 70px;
+    }
     @include bp.xl {
         font-size: 80px;
+    }
+    >div:first-child {
+        padding-top: 50px;
     }
     >div {
         text-align: center;
@@ -37,6 +53,9 @@ nav {
         z-index: 1;
         padding: 10px;
         margin: 20px auto;
+        @include bp.sm {
+            width: 312px;
+        }
         @include bp.md {
             width: 465px;
         }
@@ -46,7 +65,7 @@ nav {
     }
 }
 
-a {
+.nav-link {
     color: rgba(0, 0, 0, 1);
     &:before {
         content: "";
@@ -61,6 +80,79 @@ a {
     }
     &:active:before {
         animation: border-animation 0.5s forwards;
+    }
+}
+
+.bg-diagonal {
+    height: 90px;
+    background: linear-gradient(to bottom left, rgba(255, 252, 243, 0) 49%, rgba(0, 0, 0, 1) 51%);
+    @include bp.lg {
+        height: 130px;
+    }
+    @include bp.xxl {
+        height: 180px;
+    } 
+}
+
+.contact-container {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 0 18px;
+    display: flex;
+    justify-content: center;
+    @include bp.sm {
+        padding: 0 32px;
+    }
+    @include bp.lg {
+        padding: 0 56px;
+    }
+    @include bp.xxl {
+        padding: 0 112px;
+    }
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 100vw;
+    @include bp.xxl {
+        max-width: calc(1440px - 224px);
+    }
+}
+
+h2 {
+    text-align: left;
+    font-size: 45px;
+    hyphens: none;
+    margin-bottom: 0;
+    animation: color 3s infinite;
+    @include bp.xs-max {
+        font-size: 40px;
+    }
+    @include bp.lg {
+        font-size: 56px;        
+    }
+}
+
+.mail-container {
+    color: rgba(255, 252, 243, 1);
+    margin-bottom: 48px;
+    font-size: 18px;
+    @include bp.sm {
+        margin-bottom: -12px;
+    }
+}
+
+.contact-images {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 46px;
+    gap: 47px;
+    >a >img {
+        width: 30px;
+    }
+    >a:active {
+        transform: translateY(-10px);    
     }
 }
 

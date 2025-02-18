@@ -1,28 +1,66 @@
-<div class="navbar-container">
-    <nav>
-        <div class="about-container"> <!-- href="./#about" -->
-            <!-- <a routerLink="" fragment="about" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen()"> -->
-            <a href="#about" (click)="this.generalService.showNavBtnOpen()">
-                @if (this.generalService.currentLanguage == 'de') {
-                    Über mich
-                }
-                @if (this.generalService.currentLanguage == 'en') {
-                    About me
-                }
-            </a>
-        </div>
-        <div class="skills-container">
-            <a href="#skills" (click)="this.generalService.showNavBtnOpen()">
-                @if (this.generalService.currentLanguage == 'de') {
-                    Meine Skills
-                }
-                @if (this.generalService.currentLanguage == 'en') {
-                    My skills
-                }
+<div class="main-container">
+    
+    <div class="navbar-container">
+
+        <nav>
+            <div> <!-- href="./#about" -->
+                <!-- <a routerLink="" fragment="about" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen()"> -->
+                <a class="nav-link" href="#about" (click)="this.generalService.showNavBtnOpen()">
+                    @if (this.generalService.currentLanguage == 'de') {
+                        Über mich
+                    }
+                    @if (this.generalService.currentLanguage == 'en') {
+                        About me
+                    }
                 </a>
-        </div>
-        <div class="portfolio-container">
-            <a href="#portfolio" (click)="this.generalService.showNavBtnOpen()">Portfolio</a>
-        </div>
-    </nav>
+            </div>
+            <div>
+                <a class="nav-link" href="#skills" (click)="this.generalService.showNavBtnOpen()">
+                    @if (this.generalService.currentLanguage == 'de') {
+                        Meine Skills
+                    }
+                    @if (this.generalService.currentLanguage == 'en') {
+                        My skills
+                    }
+                    </a>
+            </div>
+            <div>
+                <a class="nav-link" href="#portfolio" (click)="this.generalService.showNavBtnOpen()">Portfolio</a>
+            </div>
+        </nav>
+
+        <div class="bottom-container">
+
+            <div class="bg-diagonal"></div>
+
+            <div class="contact-container">
+
+                <div class="contact-content">
+
+                    <div class="contact-text">
+                        <h2>
+                            @if (this.generalService.currentLanguage == 'de') {
+                                Kontakt
+                            }
+                            @if (this.generalService.currentLanguage == 'en') {
+                                Say hi!
+                            }
+                        </h2>
+                        <div class="mail-container">anita.gasteiner&#64;posteo.de</div>
+                    </div>
+
+                    <div class="contact-images">
+                        <a href="https://github.com/anitagasteiner" target="_blank"><img src="./../../../assets/img/github.svg"></a>
+                        <a href="mailto:contact@anita-gasteiner.at"><img src="./../../../assets/img/email.svg"></a>
+                        <a href="https://www.linkedin.com/in/anita-gasteiner" target="_blank"><img src="./../../../assets/img/linkedin.svg"></a>
+                    </div>
+
+                </div>
+                
+            </div>
+
+        </div>        
+
+    </div>
+
 </div>

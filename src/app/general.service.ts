@@ -23,6 +23,13 @@ export class GeneralService {
   mailText: string = 'Ihre E-Mail-Adresse';
   messageText: string = 'Ihre Nachricht';
 
+  getLanguageFromLocalStorage() {
+    const language = localStorage.getItem('language');
+    if (language) {
+      this.currentLanguage = language;
+    }    
+  }
+
   changeNavBtn() {
     if (!this.navbarOpened) {
       this.animateNavBtnClose();

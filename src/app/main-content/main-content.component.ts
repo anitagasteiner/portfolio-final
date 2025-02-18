@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { CommonModule } from '@angular/common';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { GeneralService } from '../general.service';
 // import { ReferencesComponent } from './references/references.component';
 
 @Component({
@@ -21,5 +22,11 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
   styleUrl: './main-content.component.scss'
 })
 export class MainContentComponent {
+
+  generalService = inject(GeneralService);
+
+  constructor() {
+    this.generalService.getLanguageFromLocalStorage();
+  }
 
 }

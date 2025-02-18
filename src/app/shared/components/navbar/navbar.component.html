@@ -1,7 +1,8 @@
 <div class="navbar-container">
     <nav>
         <div class="about-container"> <!-- href="./#about" -->
-            <a routerLink="" fragment="about" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen()">
+            <!-- <a routerLink="" fragment="about" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen()"> -->
+            <a href="#about" (click)="this.generalService.showNavBtnOpen()">
                 @if (this.generalService.currentLanguage == 'de') {
                     Über mich
                 }

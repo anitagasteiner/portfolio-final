@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { GeneralService } from '../../../general.service';
 
@@ -14,20 +14,34 @@ import { GeneralService } from '../../../general.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+
+  ngOnInit() {
+    this.generalService.getLanguageFromLocalStorage();
+    this.setBtnLanguage();
+  }
 
   generalService = inject(GeneralService);
 
   languageSwitch: string = 'English';
 
-  switchLanguage() {
-    if (this.languageSwitch == 'English') {
-      this.generalService.currentLanguage = 'en';
-      this.languageSwitch = 'Deutsch';
-    } else if (this.languageSwitch == 'Deutsch') {
-      this.generalService.currentLanguage = 'de';
+  setBtnLanguage() {
+    const language = localStorage.getItem('language');
+    if (language == 'de') {
       this.languageSwitch = 'English';
+    } else if (language == 'en') {
+      this.languageSwitch = 'Deutsch';
     }
+  }
+
+  switchLanguage() {
+    if (this.generalService.currentLanguage == 'de') {
+      localStorage.setItem('language', 'en');
+    } else if (this.generalService.currentLanguage == 'en') {
+      localStorage.setItem('language', 'de');
+    }
+    this.generalService.getLanguageFromLocalStorage();
+    this.setBtnLanguage();
     this.generalService.setBtnText();
     this.generalService.setPlaceholders();
   }

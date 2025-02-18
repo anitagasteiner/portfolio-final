@@ -1,47 +1,29 @@
 @use './../../../shared/breakpoints.scss' as bp;
 
 .bg-diagonal {
-    height: 55px;
-    // margin: 0 -18px;
-    background: linear-gradient(to bottom left, rgba(255, 252, 243, 0) 49%, rgba(0, 0, 0, 1) 51%);    
-    // @include bp.sm {
-    //     margin: 0 -32px;
-    // }
-    // @include bp.lg {
-    //     margin: 0 -56px;
-    // }
-    // @include bp.xxl {
-    //     // margin: 0 -112px;
-    //     margin: 0;
-    // }    
+    height: 90px;
+    background: linear-gradient(to bottom left, rgba(255, 252, 243, 0) 49%, rgba(0, 0, 0, 1) 51%);
+    @include bp.lg {
+        height: 130px;
+    }
+    @include bp.xxl {
+        height: 180px;
+    } 
 }
 
 .main-container {
     background-color: rgba(0, 0, 0, 1);
-    // margin: -1px -18px 0 -18px;
     color: rgba(255, 252, 243, 1);
-    // padding: 0 25px 46px 25px;
     padding-bottom: 46px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    @include bp.sm {
-        // margin: -1px -32px 0 -32px;
-        // padding: 0 50px 46px 50px;
-    }
-    @include bp.md {
-        // padding: 0 100px 46px 100px;
-    }
     @include bp.lg {
-        // margin: -1px -56px 0 -56px;
         padding: 0 56px 46px 56px;
     }
     @include bp.xxl {
         padding: 0 112px 46px 112px;
-        // margin: -1px -112px 0 -112px;
-        // margin: -1px auto 0 auto;
-        // padding: 0 auto 46px auto;
     } 
 }
 
@@ -49,17 +31,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // padding: 0 18px;
     width: 100%;
-    @include bp.sm {
-        // padding: 0 32px;
-    }
-    @include bp.lg {
-        // padding: 0 56px;
-    }
     @include bp.xxl {
-        // padding: 0 112px;
-        // margin: 0 auto;
         max-width: calc(1440px - 224px);
     }
 }

@@ -87,13 +87,22 @@ export class GeneralService {
       }
     );
   }
-  
-  // scrollToSection(section: any) {
-  //   console.log(section);
-  //   const currentSection: any = document.getElementById(section);
-  //   currentSection.scrollIntoView();
 
-  // }  
+  handleScrolling() {
+    if (this.navbarOpened) {
+      this.disableScrolling();
+    } else {
+      this.enableScrolling();
+    }
+  }
+
+  disableScrolling() {
+    document.body.style.overflow = 'hidden';
+  }
+
+  enableScrolling() {
+    document.body.style.overflow = 'auto';
+  }
 
   setBtnText() {
     if (this.currentLanguage == 'de') {

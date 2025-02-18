@@ -8,7 +8,7 @@
                 <img src="../../../../assets/img/world.png">
                 <div>{{languageSwitch}}</div>
             </div>
-            <a routerLink="{{this.generalService.currentNavLink}}" routerLinkActive="active" (click)="this.generalService.changeNavBtn()">
+            <a routerLink="{{this.generalService.currentNavLink}}" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling()">
                 <img [src]="generalService.currentNavBtn">
             </a>        
         </div>

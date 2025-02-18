@@ -1,0 +1,111 @@
+@use './../../shared/breakpoints.scss' as bp;
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    // margin: 0;
+    // width: 100%;
+}
+
+fieldset {
+    border: 4px solid rgba(0, 0, 0, 1);
+    padding: 0;
+    margin: 0;
+    width: inherit;
+}
+
+legend {
+    margin: auto;
+    padding: 0 8px;
+}
+
+.legend-german {
+    @include bp.xs-max {
+        padding: 0 3px;
+    }
+}
+
+h2 {
+    margin: 0 !important;
+}
+
+.h2-german {
+    @include bp.xs-max {
+        font-size: 27px;;
+    }
+}
+
+a {
+    color: rgba(0, 188, 143, 1);
+}
+
+.skills-container {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 42px;
+    padding-top: 62px;
+    display: flex;
+    flex-direction: row;
+    @include bp.lg {
+        padding-top: 120px;
+        padding-bottom: 50px;
+    }
+    >div:nth-child(1), >div:nth-child(3) {
+        background-color: rgba(255, 252, 243, 1);
+        width: 50px;
+        height: 100%;
+        z-index: 999;
+        @include bp.lg {
+            width: 90px;        
+        }
+    }
+    >div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        @include bp.lg {
+            gap: 48px;        
+        }
+    } 
+}
+
+.learn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 16px 48px 16px;
+    hyphens: none;
+    @include bp.xs-max {
+        padding: 0 8px 48px 8px;
+    }
+    @include bp.sm {
+        padding: 0 32px 48px 32px;
+    }
+    @include bp.lg {
+        padding-bottom: 80px;
+    }
+}
+
+.bottom-container {
+    display: flex;
+    justify-content: center;
+}
+
+.arrow-container {
+    width: 300px;
+    height: 250px;
+    position: relative;
+    >img {
+        position: absolute;
+        top: 10px;
+        left: 50px;
+        transition: top 1s, left 1s;
+    }
+    >img:hover {
+        top: 85px;
+        left: 90px;
+    }   
+}

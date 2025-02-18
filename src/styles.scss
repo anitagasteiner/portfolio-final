@@ -1,0 +1,150 @@
+@use './app/shared/breakpoints.scss' as bp;
+
+@font-face {
+    font-display: swap;
+    font-family: 'Syne';
+    src: url('assets/fonts/Syne-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Overpass';
+    src: url('assets/fonts/Overpass-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Overpass-Mono';
+    src: url('assets/fonts/OverpassMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Montserrat';
+    src: url('assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+    // scroll-padding-top: 92px;
+    scroll-padding-top: 100px;    
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    // background-color: green;
+    // width: auto;
+    // display: flex;
+    // justify-content: center;
+    // margin: 0 18px;
+    // @include bp.sm {
+    //     margin: 0 32px;
+    // }
+    // @include bp.lg {
+    //     margin: 0 56px;
+    // }
+    // @include bp.xxl {
+    //     // margin: 0 112px;
+    //     margin: 0 auto;
+    //     max-width: calc(1440px - 224px);
+    // }
+}
+
+.main-width {
+    margin: 0 18px;
+    @include bp.sm {
+        margin: 0 32px;
+    }
+    @include bp.lg {
+        margin: 0 56px;
+    }
+    @include bp.xxl {
+        // margin: 0 112px;
+        margin: 0 auto;
+        max-width: calc(1440px - 224px);
+    }
+}
+
+body {
+    margin: 0;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background: rgba(255, 252, 243, 1) url('./assets/img/bg-pattern.svg') no-repeat top left;
+    color: rgba(0, 0, 0, 1);
+    hyphens: auto;
+    @include bp.lg {
+        font-size: 22px;        
+    }
+}
+
+h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin: 0;
+    @include bp.sm {
+        font-size: 45px;
+    }
+    @include bp.lg {
+        font-size: 80px;
+    }
+}
+
+h2 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 42px;
+    animation: color 3s infinite;
+    @include bp.sm {
+        font-size: 42px;
+    }
+    @include bp.lg {
+        font-size: 56px;
+    }
+}
+
+h3 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin: 0;
+}
+
+// .anchor {
+//     display: block;
+//     height: 92px;
+//     margin-top: -92px;
+//     visibility: hidden;
+// }
+
+.arrow {
+    height: 167px;
+}
+
+@keyframes color {
+    0% {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    50% {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    51% {
+        color: rgba(0, 188, 143, 1);
+    }
+
+    100% {
+        color: rgba(0, 188, 143, 1);
+    }
+}

@@ -1,0 +1,26 @@
+<!-- <span class="anchor" id="portfolio"></span> -->
+
+<div class="main-width">
+
+    <h2 id="portfolio">Portfolio</h2>
+    <p>
+        @if (this.generalService.currentLanguage == 'de') {
+            Hier können Sie meine Skills in Aktion sehen: Scrollen Sie durch eine Auswahl meiner Arbeit und klicken Sie sich in meine Projekte.
+        }
+        @if (this.generalService.currentLanguage == 'en') {
+            You want to see my skills in action? Explore a&nbsp;selection of my work here and interact with my projects.
+        }    
+    </p>
+    <div class="projects-container">
+        @for (project of projects; track project.title; let index = $index) {
+            <app-project [project]="project"></app-project>
+        }
+    </div>
+
+    <div class="bottom-container">
+        <div class="arrow-container">
+            <img class ="arrow" src="./../../../assets/img/arrow-diagonal-left.svg">
+        </div>
+    </div>
+
+</div>

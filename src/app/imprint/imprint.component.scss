@@ -1,0 +1,36 @@
+.main-container {
+    margin-top: 92px;
+    font-size: 18px;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    >a >img {
+        height: 16px;
+        padding: 10px;
+    }
+}
+
+h3 {
+    font-family: 'Overpass', sans-serif;
+}
+
+h4 {
+    margin-top: 0;
+}
+
+a {
+    color: rgba(0, 0, 0, 1);
+    &:hover {
+        color: rgba(0, 188, 143, 1);
+    }
+}
+
+.source {
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}

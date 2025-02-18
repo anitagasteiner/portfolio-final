@@ -1,0 +1,140 @@
+@use './../../shared/breakpoints.scss' as bp;
+
+.main-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    @include bp.md {
+        flex-direction: row;
+        gap: 32px;
+    }
+    @include bp.xl {
+        gap: 64px;
+    }
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    >p {
+        margin-bottom: 32px;
+    }
+    >div {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        gap: 8px;
+        margin-bottom: 75px;
+        @include bp.md {
+           margin-bottom: 48px;
+        }
+        >div {
+            display: flex;
+            align-items: flex-end;
+            gap: 4px;
+            >img {
+                height: 32px;
+                width: 32px;
+            }
+        } 
+    }
+    >a {
+        color: rgba(0, 0, 0, 1);
+        align-self: center;
+        &:active {
+            color: rgba(255, 252, 243, 1);
+        }
+    }
+}
+
+h2 {
+    @include bp.md {
+        text-align: left;
+    }
+}
+
+.btn-talk {
+    font-size: 23px;
+    border: 4px solid rgba(0, 0, 0, 1);
+    text-align: center;
+    display: inline-block;
+    padding: 20px 60px;
+    align-content: center;
+    &:hover {
+        cursor: pointer;
+        font-weight: 700;
+        animation: border 0.5s forwards;
+    }
+    &:active {
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+
+.image-arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 96px;
+}
+
+.image-container {
+    position: relative;
+    >img {
+        height: 380px;
+        width: 260px;
+        object-fit: cover;
+        @include bp.sm {
+            width: 336px;
+            height: 480px;
+        }
+        @include bp.md {
+            width: 280px;
+            height: 410px;
+        }
+        @include bp.lg {
+            width: 336px;
+            height: 480px;
+        }
+        @include bp.xl {
+            width: 350px;
+            height: 500px;
+        }
+        @include bp.xxl {
+            width: 380px;
+            height: 550px;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: -14px;
+        bottom: -6px;
+        left: 10px;
+        border: 4px solid rgba(0, 0, 0, 1);
+        opacity: 0;
+        transition: opacity 0.75s ease;
+    }
+    &:hover::before {
+        opacity: 1;                
+    }
+}
+
+.arrow-container {
+    position: relative;
+    top: 0;
+    right: 0;
+    transition: top 1s, right 1s;
+    &:hover {
+        top: 90px;
+        right: 50px;
+    }
+}
+
+@keyframes border {
+    to {
+        padding: 20px 80px;
+    }
+}

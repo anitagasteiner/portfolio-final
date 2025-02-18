@@ -1,0 +1,83 @@
+@use './../../../shared/breakpoints.scss' as bp;
+
+.navbar-container {
+    position: relative;
+    width: auto;
+    height: 85vh;
+}
+
+nav {
+    z-index: 500;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
+    // font-size: 96px;
+    font-size: 40px;
+    @include bp.md {
+        font-size: 60px;
+    }
+    @include bp.xl {
+        font-size: 80px;
+    }
+    >div {
+        text-align: center;
+        width: 265px;
+        // height: 45px;
+        position: relative;
+        z-index: 1;
+        padding: 10px;
+        margin: 20px auto;
+        @include bp.md {
+            width: 465px;
+        }
+        @include bp.xl {
+            width: 665px;
+        }
+    }
+}
+
+a {
+    color: rgba(0, 0, 0, 1);
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 15px;
+        width: 15px;
+        border-left: 4px solid rgba(0, 0, 0, 1);
+        border-bottom: 4px solid rgba(0, 0, 0, 1);
+    }
+    &:active:before {
+        animation: border-animation 0.5s forwards;
+    }
+}
+
+@keyframes border-animation {
+    0% {        
+        left: 0;
+        height: 15px;
+        width: 15px;
+    }
+    1% {        
+        left: unset;
+        height: 0;
+        width: 265px;
+    }
+    100% {
+        left: unset;
+        height: 0;
+        width: 110px;
+    }
+}

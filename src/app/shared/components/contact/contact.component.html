@@ -1,0 +1,52 @@
+<span id="contact" class="anchor"></span>
+
+<div class="bg-diagonal"></div>
+
+<div class="main-container">
+
+    <div class="head-container">
+        @if (this.generalService.currentLanguage == 'de') {
+            <h2>Kontakt</h2>
+            <div class="question">Sie stehen vor einem neuen Projekt?</div>
+            <div class="text">Kontaktieren Sie mich. Wir&nbsp;besprechen Ihre Ideen und setzen&nbsp;sie&nbsp;um.</div>
+        }
+        @if (this.generalService.currentLanguage == 'en') {
+            <h2>Say hi!</h2>
+            <div class="question">Want to discuss a new project?</div>
+            <div class="text">Say hello! Let's discuss your ideas and make it happen.</div>
+        }
+    </div>  
+
+    <app-form></app-form>
+
+    <div class="bottom-container">
+
+        <div class="contact-images">
+            <a href="https://github.com/anitagasteiner" target="_blank"><img src="./../../../assets/img/github.svg"></a>
+            <a href="mailto:contact@anita-gasteiner.at"><img src="./../../../assets/img/email.svg"></a>
+            <a href="https://www.linkedin.com/in/anita-gasteiner" target="_blank"><img src="./../../../assets/img/linkedin.svg"></a>
+        </div>
+
+        <div class="logo-copyright-container">
+            <img class="logo" src="./../../../assets/img/logo-ag.png">
+            <div class="copyright">&#169; Anita Gasteiner 2025</div>
+        </div>
+
+    </div>
+
+    <div class="link-legal-notice-container">
+
+        <div class="link-legal-notice">
+            <a routerLink="imprint" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()">
+                @if (this.generalService.currentLanguage == 'de') {
+                    Impressum
+                }
+                @if (this.generalService.currentLanguage == 'en') {
+                    Legal notice
+                }
+            </a>
+        </div>
+
+    </div>
+
+</div>

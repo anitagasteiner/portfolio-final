@@ -1,0 +1,48 @@
+<!-- <span class="anchor" id="skills"></span> -->
+
+<div class="main-container main-width" id="skills">
+
+    <fieldset>
+
+        @if (this.generalService.currentLanguage == 'de') {            
+            <legend [ngClass]="'legend-german'">
+                <h2 [ngClass]="'h2-german'">Meine Skills</h2>
+            </legend>
+        }
+        @if (this.generalService.currentLanguage == 'en') {            
+            <legend>
+                <h2>My skills</h2>
+            </legend>            
+        }
+
+        <div class="skills-container">
+            <div></div>
+            <div>
+                @for (skill of skills; track skill.name; let index = $index) {
+                    <app-skill [skill]="skill"></app-skill>
+                }
+            </div>
+            <div></div>
+        </div>
+
+        <div class="learn-container">
+            <img src="./../../../assets/img/learn.svg">
+            <div>
+                @if (this.generalService.currentLanguage == 'de') {
+                    Sie brauchen weitere Skills?<br><a href="#contact">Kontaktieren Sie mich.</a> Ich bin immer bereit zu lernen.
+                }
+                @if (this.generalService.currentLanguage == 'en') {
+                    Don't see the skill you need?<br><a href="#contact">Contact&nbsp;me.</a> I'm always ready to learn.
+                }
+            </div>
+        </div>
+        
+    </fieldset>
+
+    <div class="bottom-container">
+        <div class="arrow-container">
+            <img class="arrow" src="./../../../assets/img/arrow-diagonal-right.svg">
+        </div>
+    </div>
+
+</div>

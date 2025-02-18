@@ -1,0 +1,125 @@
+.skill {    
+    width: 85px !important;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    >div:first-child {
+        height: 60px;
+        z-index: 1;
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        &:hover {
+            z-index: 0 !important;            
+        }
+        >img {
+            vertical-align: center;
+            height: 60px;
+            max-width: 65px;
+            background-color: rgba(255, 252, 243, 1);
+            &:hover {
+                animation: move 1.5s ease-in-out;
+            }            
+        }
+    }
+    &:hover {
+        color: rgba(0, 188, 143, 1);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0px);
+        height: 60px;
+        max-width: 65px;
+    }
+    6% {
+        transform: translateX(5px);
+        height: 60px;
+        max-width: 65px;
+    }
+    12% {
+        transform: translateX(10px);      
+        height: 55px;
+        max-width: 60px;
+    }
+    18% {
+        transform: translateX(15px);
+        height: 55px;
+        max-width: 60px;
+    }
+    24% {
+        transform: translateX(20px);
+        height: 50px;
+        max-width: 55px;
+    }
+    30% {
+        transform: translateX(15px);
+        height: 50px;
+        max-width: 55px;
+    }
+    36% {
+        transform: translateX(10px);
+        height: 50px;
+        max-width: 55px;
+    }
+    42% {
+        transform: translateX(5px);
+        height: 50px;
+        max-width: 55px;
+    }
+    48% {
+        transform: translateX(0px);
+        height: 50px;
+        max-width: 55px;
+    }
+    54% {
+        transform: translateX(-5px);
+        height: 50px;
+        max-width: 55px;
+    }
+    60% {
+        transform: translateX(-10px);
+        height: 50px;
+        max-width: 55px;
+    }
+    66% {
+        transform: translateX(-15px);
+        height: 50px;
+        max-width: 55px;
+    }
+    72% {
+        transform: translateX(-20px);
+        height: 50px;
+        max-width: 55px;
+    }
+    78% {
+        transform: translateX(-15px);
+        height: 50px;
+        max-width: 55px;
+    }
+    84% {
+        transform: translateX(-10px);
+        height: 55px;
+        max-width: 60px;
+    }
+    90% {
+        transform: translateX(-5px);
+        height: 55px;
+        max-width: 60px;
+    }
+    96% {
+        transform: translateX(0px);
+        height: 60px;
+        max-width: 65px;
+    }
+    100% {
+        transform: translateX(0px);
+        height: 60px;
+        max-width: 65px;
+    }
+}

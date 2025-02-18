@@ -1,0 +1,18 @@
+<div class="main-container">
+
+    <div class="content-container">
+
+        <img src="../../../../assets/img/logo-ag.png">
+        <div>
+            <div class="language-container" (click)="switchLanguage()">
+                <img src="../../../../assets/img/world.png">
+                <div>{{languageSwitch}}</div>
+            </div>
+            <a routerLink="{{this.generalService.currentNavLink}}" routerLinkActive="active" (click)="this.generalService.changeNavBtn()">
+                <img [src]="generalService.currentNavBtn">
+            </a>        
+        </div>
+
+    </div>
+        
+</div>

@@ -1,0 +1,84 @@
+<div class="main-container main-width">
+
+    <div class="head-container">        
+        <h3>
+            @if (this.generalService.currentLanguage == 'de') {
+                Impressum
+            }
+            @if (this.generalService.currentLanguage == 'en') {
+                Legal notice
+            }            
+        </h3>
+        <a routerLink="" routerLinkActive="active"><img src="./../../assets/img/btn-close.svg"></a>
+    </div>
+
+    @if (this.generalService.currentLanguage == 'de') {
+        <h4>Informationen und Offenlegung gemäß &sect;&nbsp;5&nbsp;(1)&nbsp;ECG, &sect;&nbsp;25&nbsp;MedienG, &sect;&nbsp;63&nbsp;GewO und &sect;&nbsp;14&nbsp;UGB</h4>
+        <p>
+            <b>Webseitenbetreiberin:</b> Anita Gasteiner
+            <br><b>Anschrift:</b> Knotzenbachgasse 8A, 1230 Wien
+            <br><b>Kontakt:</b> contact&#64;anita-gasteiner.at
+            <br><b>Berufsbezeichnung:</b> Frontend Developer
+        </p><br>
+    }
+    @if (this.generalService.currentLanguage == 'en') {
+        <h4>Information und disclosure according to &sect;&nbsp;5&nbsp;(1)&nbsp;ECG, &sect;&nbsp;25&nbsp;MedienG, &sect;&nbsp;63&nbsp;GewO und &sect;&nbsp;14&nbsp;UGB</h4>
+        <p>
+            <b>Website Operator:</b> Anita Gasteiner
+            <br><b>Address:</b> Knotzenbachgasse 8A, 1230 Wien
+            <br><b>Contact:</b> contact&#64;anita-gasteiner.at
+            <br><b>Professional Title:</b> Frontend Developer
+        </p><br>
+    }    
+
+    <p>
+        <b>Fonts:</b> Montserrat: <i>Copyright 2024 <a href="https://github.com/JulietaUla/Montserrat.git" target="_blank">The Montserrat.Git Project</a> Authors, SIL Open Font License (Version 1.1)</i> | Overpass: <i>2021 <a href="https://github.com/RedHatOfficial/Overpass" target="_blank">The Overpass Project</a> Authors, SIL Open Font License (Version 1.1)</i> | Syne: <i>Copyright 2017 <a href="https://gitlab.com/bonjour-monde/fonderie/syne-typeface" target="_blank">The Syne Project</a> Authors, SIL Open Font License (Version 1.1)</i>
+        <br>
+
+        @if (this.generalService.currentLanguage == 'de') {
+            <b>Design und Images: </b><a href="https://developerakademie.com" target="_blank">Developer Akademie München</a>
+            <br><b>Foto:</b> privat
+            <br><b>Icon Welt: </b>
+        }
+        @if (this.generalService.currentLanguage == 'en') {
+            <b>Design and Images: </b><a href="https://developerakademie.com" target="_blank">Developer Akademie Munich</a>
+            <br><b>Photo:</b> private
+            <br><b>Icon World: </b>
+        }
+            <a href="https://pixabay.com" target="_blank">Pixabay</a> (royalty-free)
+    </p><br>
+
+    @if (this.generalService.currentLanguage == 'de') {
+        <p><b>Anwendbare Rechtsvorschrift: </b> <a href="https://ris.bka.gv.at/" target="_blank">ris.bka.gv.at</a></p><br>
+
+        <p><b>Online-Streitbeilegung:</b> Verbraucher*innen, welche in Österreich oder in einem sonstigen Vertragsstaat der ODR-VO niedergelassen sind, haben die Möglichkeit, Probleme bezüglich des entgeltlichen Kaufs von Waren oder Dienstleistungen im Rahmen einer Online-Streitbeilegung (nach OS, AStG) zu lösen. Die Europäische Kommission stellt eine Plattform hierfür bereit: <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p><br>
+
+        <p><b>Urheberrecht:</b> Die Inhalte dieser Webseite unterliegen, soweit dies rechtlich möglich ist, diversen Schutzrechten (zB dem Urheberrecht). Jegliche Verwendung/Verbreitung von bereitgestelltem Material, welche urheberrechtlich untersagt ist, bedarf schriftlicher Zustimmung der Webseitenbetreiberin.</p><br>
+
+        <p>
+            <b>Haftungsausschluss:</b> Trotz sorgfältiger inhaltlicher Kontrolle übernimmt die Betreiberin dieser Webseite keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber*innen verantwortlich.
+            <br>Sollten Sie dennoch auf ausgehende Links aufmerksam werden, welche auf eine Webseite mit rechtswidriger Tätigkeit/Information verweisen, ersuche ich um dementsprechenden Hinweis, um diese nach &sect;&nbsp;17 Abs&nbsp;2 ECG umgehend zu entfernen.
+            <br>Die Urheberrechte Dritter werden von der Betreiberin dieser Webseite mit größter Sorgfalt beachtet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitte ich um einen entsprechenden Hinweis. Bei Bekanntwerden derartiger Rechtsverletzungen werde ich den betroffenen Inhalt umgehend entfernen.
+        </p>
+
+        <p class="source"><b>Quelle: </b><a href="https://www.fairesrecht.at/kostenlos-impressum-erstellen-generator.php" target="_blank">Impressum Generator Österreich</a>
+        </p>
+    }
+    @if (this.generalService.currentLanguage == 'en') {
+        <p><b>Applicable Legal Provisions: </b> <a href="https://ris.bka.gv.at/" target="_blank">ris.bka.gv.at</a></p><br>
+
+        <p><b>Online Dispute Resolution:</b> Consumers residing in Austria or any other contracting state of the ODR Regulation have the possibility to resolve disputes regarding the paid purchase of goods or services through online dispute resolution (according to the OS, AStG). The European Commission provides a platform for this: <a href="https://ec.europa.eu/consumers/odr" target="_blank">https://ec.europa.eu/consumers/odr</a></p><br>
+
+        <p><b>Copyright:</b> The content of this website is subject to various protection rights (e.g., copyright), as far as legally possible. Any use/distribution of provided material that is prohibited by copyright requires written consent from the website operator.</p><br>
+
+        <p>
+            <b>Disclaimer:</b> Despite careful content control, the operator of this website accepts no responsibility for the content of external links. The operators of the linked sites are solely responsible for their content.
+            <br>If you come across any outgoing links pointing to a website with illegal activities/information, I kindly request that you notify me so I can promptly remove them in accordance with &sect;&nbsp;17 Abs&nbsp;2 ECG.
+            <br>The website operator takes the greatest care to respect third-party copyrights. If you become aware of any copyright infringement, please notify me. Upon becoming aware of such legal violations, I will immediately remove the affected content.
+        </p>
+
+        <p class="source"><b>Source: </b><a href="https://www.fairesrecht.at/kostenlos-impressum-erstellen-generator.php" target="_blank">Impressum Generator Österreich</a>
+        </p>
+    }    
+
+</div>

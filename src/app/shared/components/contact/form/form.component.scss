@@ -1,0 +1,211 @@
+@use './../../../../shared/breakpoints.scss' as bp;
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 50px;
+    width: 280px;
+    @include bp.sm {
+        width: 350px;
+    }
+    @include bp.md {
+        width: 400px;
+    }
+    @include bp.lg {
+        width: 600px;
+    }
+}
+
+fieldset {
+    border: 2px solid transparent;
+    border-bottom-color: rgba(255, 252, 243, 1);
+    margin: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: inherit;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    @include bp.xs-max {
+        width: 220px;
+    }
+}
+
+legend {
+    color: rgba(255, 252, 243, 1);
+    font-size: 16px;
+    opacity: 0;
+}
+
+.name-mail-input {
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    color: rgba(255, 252, 243, 1);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: inherit;
+    resize: none;
+    padding-bottom: 5px;
+    display: inline;
+    &:focus {
+        background-color: rgba(0, 0, 0, 1);
+        outline: none;
+        + legend {
+        opacity: 1;
+        }
+    }
+}
+
+input:autofill {
+    color: rgba(255, 252, 243, 1);
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+  }
+
+fieldset:has(input:focus) {
+    border: 4px solid rgba(255, 252, 243, 1);
+}
+
+fieldset:has(textarea:focus) {
+    border: 4px solid rgba(255, 252, 243, 1);
+}
+
+::placeholder {
+    color: rgba(255, 252, 243, 1);
+    font-size: 16px; 
+}
+
+.notification {
+    position: absolute;
+    left: 0;
+    bottom: -24px;
+    color: red;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.notification-img {
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+}
+
+.notification-img-message {
+    position: absolute;
+    right: 12px;
+    top: 3px;
+}
+
+.privacy-notification {
+    bottom: -4px !important;
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 1);
+    border: none;
+    color: rgba(255, 252, 243, 1);
+    font-family: 'Overpass', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: inherit;
+    height: 250px;
+    resize: none;
+    margin-bottom: 8px;
+    &:focus {
+        background-color: rgba(0, 0, 0, 1);
+        outline: none;
+        + legend {
+        opacity: 1;
+        }
+    }
+}
+
+.privacy-container {
+    position: relative;
+    width: 100%;
+    @include bp.xs-max {
+        width: 250px;
+    }
+}
+
+#privacy {
+    border: 4px solid rgba(187, 187, 187, 1);
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    color: rgba(187, 187, 187, 1);
+}
+
+.privacy-check-container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    >label >div {
+        display: inline-block;
+        width: 95px;
+        text-align: center;
+        >a {
+            color: rgba(0, 188, 143, 1);
+        }
+        >a:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+.privacy-policy-german {
+    width: 150px !important;
+}
+
+.send-container {
+    position: relative;
+}
+
+.btn-send-invalid {
+    background-color: rgba(0, 0, 0, 1);
+    border: 4px solid rgba(187, 187, 187, 0.3);
+    padding: 20px 30px;
+    margin-top: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: rgba(187, 187, 187, 0.3);
+    width: auto;
+}
+
+.btn-send {
+    background-color: rgba(0, 0, 0, 1);
+    border: 4px solid rgba(187, 187, 187, 1);
+    padding: 20px 30px;
+    margin-top: 34px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: rgba(187, 187, 187, 1);
+    width: auto;
+    cursor: pointer;
+    &:active {
+        padding: 20px 38px;
+        font-weight: 600;
+    }
+}
+
+.sent-notification {
+    color: rgba(0, 188, 143, 1);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 4px solid rgba(187, 187, 187, 0.7);
+    padding: 5px;
+    font-size: 22px;
+    text-align: center;
+    transform:  rotate(-5deg);
+    position: absolute;
+    top: 30px;
+    left: -5px;
+}

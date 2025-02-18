@@ -115,6 +115,19 @@ p {
     height: 167px;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 188, 143, 1);
+    border-radius: 10px;
+}
+
 @keyframes color {
     0% {
         color: rgba(0, 0, 0, 1);

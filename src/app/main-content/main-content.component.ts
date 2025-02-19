@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GeneralService } from '../general.service';
+import { ArrowRightComponent } from './arrow-right/arrow-right.component';
 // import { ReferencesComponent } from './references/references.component';
 
 @Component({
@@ -16,7 +17,8 @@ import { GeneralService } from '../general.service';
     AboutMeComponent,
     MySkillsComponent,
     PortfolioComponent,
-    // ReferencesComponent
+    // ReferencesComponent,
+    ArrowRightComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

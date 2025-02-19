@@ -1,56 +1,63 @@
 <div class="main-container main-width" id="about">
-    <div class="text-container">
-        @if (this.generalService.currentLanguage == 'de') {
-            <h2>Über mich</h2>
-            <p>Ich bin Frontend-Entwicklerin in Wien und begeistere mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen. </p>
-            <p>Wenn Sie mich gerne für Ihre Projekte einsetzen möchten, kontaktieren Sie mich! Ich freue mich auf eine Position als Junior Developer.</p>
-        }
-        @if (this.generalService.currentLanguage == 'en') {
-            <h2>About me</h2>
-            <p>I am a front-end developer based in Vienna, Austria. I&nbsp;enjoy helping designers and companies to bring their ideas into real life. </p>
-            <p>If you think I&nbsp;would be a&nbsp;good match for your projects, contact me! I&nbsp;am looking forward to a&nbsp;job in a&nbsp;junior developer position.</p>
-        }
-        <div>
+
+    @if (this.generalService.currentLanguage == 'de') {
+        <h2>Über mich</h2>
+    }
+    @if (this.generalService.currentLanguage == 'en') {
+        <h2>About me</h2>
+    }
+
+    <div class="content-container">
+
+        <div class="text-container">
+            @if (this.generalService.currentLanguage == 'de') {
+                <p>Ich bin Frontend-Entwicklerin in Wien und begeistere mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen. </p>
+                <p>Wenn Sie mich gerne für Ihre Projekte einsetzen möchten, kontaktieren Sie mich! Ich freue mich auf eine Position als Junior Developer.</p>
+            }
+            @if (this.generalService.currentLanguage == 'en') {
+                <p>I am a front-end developer based in Vienna, Austria. I&nbsp;enjoy helping designers and companies to bring their ideas into real life. </p>
+                <p>If you think I&nbsp;would be a&nbsp;good match for your projects, contact me! I&nbsp;am looking forward to a&nbsp;job in a&nbsp;junior developer position.</p>
+            }
             <div>
-                <img src="./../../../assets/img/house.svg">
-                <span>
+                <div>
+                    <img src="./../../../assets/img/house.svg">
+                    <span>
+                        @if (this.generalService.currentLanguage == 'de') {
+                            Wohnhaft in Wien
+                        }
+                        @if (this.generalService.currentLanguage == 'en') {
+                            Based in Vienna
+                        }
+                    </span>
+                </div>
+                <div>
+                    <img src="./../../../assets/img/laptop.svg">
+                    <span>
+                        @if (this.generalService.currentLanguage == 'de') {
+                            Gerne auch Telearbeit
+                        }
+                        @if (this.generalService.currentLanguage == 'en') {
+                            Open to work remotely
+                        }
+                    </span>
+                </div>
+            </div>
+            <a href="#contact">
+                <div class="btn-contact">
                     @if (this.generalService.currentLanguage == 'de') {
-                        Wohnhaft in Wien
+                        Kontakt
                     }
                     @if (this.generalService.currentLanguage == 'en') {
-                        Based in Vienna
-                    }
-                </span>
-            </div>
-            <div>
-                <img src="./../../../assets/img/laptop.svg">
-                <span>
-                    @if (this.generalService.currentLanguage == 'de') {
-                        Gerne auch Telearbeit
-                    }
-                    @if (this.generalService.currentLanguage == 'en') {
-                        Open to work remotely
-                    }
-                </span>
-            </div>
+                        Contact
+                    }            
+                </div>
+            </a>
         </div>
-        <a href="#contact">
-            <div class="btn-talk">
-                @if (this.generalService.currentLanguage == 'de') {
-                    Kontakt
-                }
-                @if (this.generalService.currentLanguage == 'en') {
-                    Contact
-                }            
-            </div>
-        </a>
-    </div>
-    <div class="image-arrow-container">
+    
         <div class="image-container">
             <img src="./../../../assets/img/anita-gasteiner.jpg">
         </div>
-        <div class="arrow-container" id="about-me-arrow">
-            <img class ="arrow" src="./../../../assets/img/arrow-diagonal-left.svg">
-        </div>    
-    </div>
+
+    </div>    
+
 </div>

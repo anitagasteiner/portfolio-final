@@ -2,8 +2,18 @@
 
 .main-container {
     margin-top: 50px;
+}
+
+h2 {
+    @include bp.md {
+        text-align: left;
+    }
+}
+
+.content-container {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     @include bp.md {
         flex-direction: row;
         gap: 32px;
@@ -25,6 +35,7 @@
         flex-direction: column;
         align-items: left;
         gap: 8px;
+        margin-top: 10px;
         margin-bottom: 75px;
         @include bp.md {
            margin-bottom: 48px;
@@ -48,13 +59,7 @@
     }
 }
 
-h2 {
-    @include bp.md {
-        text-align: left;
-    }
-}
-
-.btn-talk {
+.btn-contact {
     font-size: 23px;
     border: 4px solid rgba(0, 0, 0, 1);
     text-align: center;
@@ -71,33 +76,9 @@ h2 {
     }
 }
 
-.image-arrow-container {
-    background-color: green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 96px;
-    height: 580px;
-    @include bp.sm {
-        height: 680px;
-    }
-    @include bp.md {
-        height: 610px;
-    }
-    @include bp.lg {
-        height: 680px;
-    }
-    @include bp.xl {
-        height: 700px;
-    }
-    @include bp.xxl {
-        height: 750px;
-    }
-}
-
 .image-container {
     position: relative;
+    align-self: center;
     >img {
         height: 380px;
         width: 260px;

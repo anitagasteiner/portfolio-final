@@ -6,18 +6,36 @@
     align-items: flex-start;
     margin-top: 63px;
     @include bp.xl {
-        flex-direction: row;
+        gap: 50px;
     }
 }
 
 .project-left {
     text-align: left;
     align-items: flex-start;
+    @include bp.xl {
+        flex-direction: row-reverse;
+        position: relative;
+        .project-date {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
 }
 
 .project-right {
     align-items: flex-end;
     text-align: right;
+    @include bp.xl {
+        flex-direction: row;
+        position: relative;
+        .project-date {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
 }
 
 .project-img-container {
@@ -25,7 +43,6 @@
 }
 
 .project-arrow-round {
-    // width: 75px;
     width: 48px;
     position: absolute;
     left: -8px;
@@ -80,6 +97,9 @@
     border-radius: 29px;
     filter: grayscale(100%);
     transition: filter 1s ease-in;
+    @include bp.sm {
+        border-radius: 36px;
+    }
     @include bp.md {
         border-radius: 25px;
     }
@@ -90,7 +110,6 @@
 
 .project-img-portrait {
     padding-top: 16px;
-    // width: 316px;
     width: 270px;
     filter: grayscale(100%);
     transition: filter 1s ease-in;
@@ -100,26 +119,22 @@
     @include bp.md {
         width: 500px;
     }
-    // @include bp.xl {
-    //     width: 700px;
-    // }
 }
 
 .project-img-landscape {
     padding-top: 16px;
-    // width: 316px;
-    width: 270px;
+    width: 350px;
     filter: grayscale(100%);
     transition: filter 1s ease-in;
+    @include bp.xs-max {
+        width: 270px;
+    }
     @include bp.sm {
-        width: 316px;
+        width: 450px;
     }
     @include bp.md {
         width: 500px;
     }
-    // @include bp.xl {
-    //     width: 700px;
-    // }
 }
 
 .color {
@@ -132,6 +147,14 @@
     position: relative;
     @include bp.sm {
         height: 350px;
+    }
+    @include bp.xl {
+        .project-left {
+            top: 50px;
+        }
+        .project-right {
+            top: -100px;
+        }
     }
 }
 

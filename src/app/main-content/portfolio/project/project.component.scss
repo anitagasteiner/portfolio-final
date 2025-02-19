@@ -4,7 +4,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 63px;  
+    margin-top: 63px;
+    @include bp.xl {
+        flex-direction: row;
+    }
 }
 
 .project-left {
@@ -36,8 +39,8 @@
         width: 60px;
     }
     @include bp.xl {
-        left: -15px;
-        bottom: 140px;
+        left: -25px;
+        bottom: 100px;
         width: 80px;
     }
 }
@@ -63,8 +66,7 @@
         border-radius: 25px;
     }
     @include bp.xl {
-        bottom: 160px;
-        border-radius: 47px;
+        bottom: 115px;
     }
 }
 
@@ -82,8 +84,7 @@
         border-radius: 25px;
     }
     @include bp.xl {
-        bottom: 160px;
-        border-radius: 47px;
+        bottom: 115px;
     }
 }
 
@@ -99,9 +100,9 @@
     @include bp.md {
         width: 500px;
     }
-    @include bp.xl {
-        width: 700px;
-    }
+    // @include bp.xl {
+    //     width: 700px;
+    // }
 }
 
 .project-img-landscape {
@@ -116,9 +117,9 @@
     @include bp.md {
         width: 500px;
     }
-    @include bp.xl {
-        width: 700px;
-    }
+    // @include bp.xl {
+    //     width: 700px;
+    // }
 }
 
 .color {

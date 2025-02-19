@@ -1,0 +1,47 @@
+@use './../../shared/breakpoints.scss' as bp;
+
+.arrow-container {
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include bp.lg {
+        height: 310px;
+    }
+    >div {
+        width: 65%;
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        transition: display 3s, align-items 3s, justify-content 3s;
+        @include bp.xs-max {
+            width: 80%
+        }
+        @include bp.sm {
+            width: 50%;
+        }
+        @include bp.md {
+            width: 40%;
+        }
+        @include bp.xl {
+            width: 30%;
+        }
+        >div {
+            width: inherit;
+            >img {
+                height: 160px;
+                @include bp.lg {
+                    height: 210px;
+                }
+            }
+        }
+    } 
+}
+
+.move {
+    display: flex;
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+}

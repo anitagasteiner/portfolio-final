@@ -69,34 +69,4 @@ export class MySkillsComponent {
     }
   ];
 
-  arrowOptions = {
-    threshold: 1
-  };
-
-  arrowObserver: IntersectionObserver | undefined;
-
-  ngAfterViewInit(): void {    
-    this.arrowObserver = new IntersectionObserver(this.callback, this.arrowOptions);
-    const arrow = document.querySelector('#my-skills-arrow');
-    if (arrow) {
-      this.arrowObserver.observe(arrow);
-    }
-  }
-
-  callback = (entries: IntersectionObserverEntry[]) => {
-    entries.forEach(entry => {
-      console.log('Skills-Arrow: ', entry.isIntersecting);
-      if (entry.isIntersecting) {
-        this.addClassName('move');
-      }
-    });
-  };
-
-  addClassName(className: string): void {
-    const arrow = document.querySelector('#my-skills-arrow');
-    if (arrow) {
-      arrow.classList.add(className);      
-    }
-  }
-
 }

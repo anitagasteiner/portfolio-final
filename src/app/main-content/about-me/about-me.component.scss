@@ -72,11 +72,28 @@ h2 {
 }
 
 .image-arrow-container {
+    background-color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     margin-bottom: 96px;
+    height: 580px;
+    @include bp.sm {
+        height: 680px;
+    }
+    @include bp.md {
+        height: 610px;
+    }
+    @include bp.lg {
+        height: 680px;
+    }
+    @include bp.xl {
+        height: 700px;
+    }
+    @include bp.xxl {
+        height: 750px;
+    }
 }
 
 .image-container {
@@ -123,18 +140,24 @@ h2 {
 }
 
 .arrow-container {
-    position: relative;
-    top: 0;
-    right: 0;
-    transition: top 1s, right 1s;
-    &:hover {
-        top: 90px;
-        right: 50px;
+    background-color: red;
+    margin-right: -50px;
+    transition: margin-top 1s, margin-right 1s;
+    @include bp.md {
+        margin-right: 0;
     }
 }
 
 @keyframes border {
     to {
         padding: 20px 80px;
+    }
+}
+
+.move {
+    margin-top: 100px;
+    margin-right: 50px;
+    @include bp.md {
+        margin-right: 250px;
     }
 }

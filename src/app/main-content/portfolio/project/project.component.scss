@@ -164,13 +164,13 @@
             margin-top: 52px;
             margin-left: 500px;
             opacity: 0;
-            transition: opacity 1s, margin-left 0.8s;
+            transition: opacity 1s, margin-left 1s;
         }
         .project-right {
             margin-top: -92px;
             margin-right: 500px;
             opacity: 0;
-            transition: opacity 1s, margin-right 0.8s;
+            transition: opacity 1s, margin-right 1s;
         }
     }
 }

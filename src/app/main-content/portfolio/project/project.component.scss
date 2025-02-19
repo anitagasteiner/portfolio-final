@@ -10,13 +10,24 @@
     }
 }
 
+.project-date {
+    @include bp.md {
+        font-weight: 700;
+        font-size: 28px;
+    }
+    @include bp.xl {
+        font-weight: 700;
+        font-size: 48px;
+    }
+}
+
 .project-left {
     text-align: left;
     align-items: flex-start;
     @include bp.xl {
         flex-direction: row-reverse;
         position: relative;
-        .project-date {
+        .project-date {            
             position: absolute;
             top: 0;
             left: 0;
@@ -178,6 +189,15 @@
 
 .absolute-right {
     right: 0;
+}
+
+h3 {
+    @include bp.lg {
+        font-size: 36px;
+    }
+    @include bp.xl {
+        font-size: 40px;
+    }    
 }
 
 .project-skills {

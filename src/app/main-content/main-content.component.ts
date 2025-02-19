@@ -6,6 +6,7 @@ import { MySkillsComponent } from './my-skills/my-skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GeneralService } from '../general.service';
 import { ArrowRightComponent } from './arrow-right/arrow-right.component';
+import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
 // import { ReferencesComponent } from './references/references.component';
 
 @Component({
@@ -18,6 +19,7 @@ import { ArrowRightComponent } from './arrow-right/arrow-right.component';
     MySkillsComponent,
     PortfolioComponent,
     // ReferencesComponent,
+    ArrowLeftComponent,
     ArrowRightComponent
   ],
   templateUrl: './main-content.component.html',

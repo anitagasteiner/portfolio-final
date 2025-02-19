@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
   templateUrl: './arrow-right.component.html',
   styleUrl: './arrow-right.component.scss'
 })
-export class ArrowRightComponent {
+export class ArrowRightComponent {  
 
 }

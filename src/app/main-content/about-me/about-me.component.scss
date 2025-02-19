@@ -120,25 +120,8 @@ h2 {
     }
 }
 
-.arrow-container {
-    background-color: red;
-    margin-right: -50px;
-    transition: margin-top 1s, margin-right 1s;
-    @include bp.md {
-        margin-right: 0;
-    }
-}
-
 @keyframes border {
     to {
         padding: 20px 80px;
-    }
-}
-
-.move {
-    margin-top: 100px;
-    margin-right: 50px;
-    @include bp.md {
-        margin-right: 250px;
     }
 }

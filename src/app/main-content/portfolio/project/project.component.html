@@ -1,7 +1,7 @@
 <div class="project-container project-{{project.position}}">
     <p class="project-date">{{project.date}}</p>
     <a href="{{project.webLink}}" target="_blank">
-        <div class="project-img-container">
+        <div class="project-img-container project-img-container-{{project.orientation}}">
             <img class="project-arrow-round" src="./../../../../assets/img/arrow-round.svg" id="project-{{project.id}}-arrow">
             <img class="project-img-{{project.orientation}}" src="./../../../../assets/img/{{currentImg}}" id="project-{{project.id}}-image">
             <div class="project-border-{{project.orientation}}" id="project-{{project.id}}-border"></div>        

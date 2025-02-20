@@ -53,6 +53,35 @@
     position: relative;
 }
 
+.project-img-container-landscape {
+    height: 218px;
+    @include bp.xs-max {
+        height: 175px;
+    }
+    @include bp.sm {
+        height: 272px;
+    }
+    @include bp.md {
+        height: 360px;
+    }
+    @include bp.xl {
+        height: 486px;
+    }
+}
+
+.project-img-container-portrait {
+    height: 512px;
+    @include bp.sm {
+        height: 594px;
+    }
+    @include bp.md {
+        height: 360px;
+    }
+    @include bp.xl {
+        height: 486px;
+    }
+}
+
 .project-arrow-round {
     width: 48px;
     position: absolute;
@@ -88,20 +117,21 @@
     }
     @include bp.md {
         left: -4px;
-        top: 15px;
+        top: 14px;
         right: -4px;
         bottom: 6px;
         border-radius: 25px;
     }
     @include bp.xl {
-        bottom: 115px;
+        top: 15px;
+        bottom: 110px;
     }
 }
 
 .project-border-landscape {
     position: absolute;
     left: -4px;
-    top: 15px;
+    top: 13px;
     right: -4px;
     bottom: 6px;
     border: 6px solid rgba(0, 188, 143, 1);
@@ -110,12 +140,15 @@
     transition: filter 1s ease-in;
     @include bp.sm {
         border-radius: 36px;
+        top: 15px;
     }
     @include bp.md {
         border-radius: 25px;
+        top: 14px;
     }
     @include bp.xl {
-        bottom: 115px;
+        top: 15px;
+        bottom: 110px;
     }
 }
 

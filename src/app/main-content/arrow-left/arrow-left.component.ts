@@ -25,7 +25,6 @@ export class ArrowLeftComponent implements AfterViewInit {
 
   callback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
-      console.log('Arrow left: ', entry.isIntersecting);
       if (entry.isIntersecting) {
         this.addClassName('move');
       }

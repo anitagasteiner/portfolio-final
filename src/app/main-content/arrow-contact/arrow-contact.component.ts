@@ -25,7 +25,6 @@ export class ArrowContactComponent implements AfterViewInit {
 
   callback = (entries: IntersectionObserverEntry[]) => {
     entries.forEach(entry => {
-      console.log('Arrow contact: ', entry.isIntersecting);
       if (entry.isIntersecting) {
         this.addClassName('move');
       }

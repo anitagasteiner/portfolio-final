@@ -2,7 +2,8 @@
 
 .arrow-container {
     height: 260px;
-    margin-bottom: 32px;
+    margin-top: 32px;
+    // margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,20 +51,20 @@
 }
 
 .move {
-    translate: -70px 148px;
+    translate: -70px 156px;
     @include bp.xs-max {
-        translate: -90px 148px;
+        translate: -90px 156px;
     }
     @include bp.sm {
-        translate: -130px 148px;
+        translate: -130px 156px;
     }
     @include bp.md {
-        translate: -250px 148px;
+        translate: -250px 156px;
     }
     @include bp.lg {
-        translate: -280px 168px;
+        translate: -280px 182px;
     }
     @include bp.xl {
-        translate: -320px 168px;
+        translate: -320px 200px;
     }
 }

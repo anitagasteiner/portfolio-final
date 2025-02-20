@@ -39,8 +39,7 @@ export class ProjectComponent implements OnInit, AfterViewInit {
   }
 
   options = {
-    // threshold: 0.8
-    threshold: 1
+    threshold: 0.8
   };
 
   observer: IntersectionObserver | undefined;

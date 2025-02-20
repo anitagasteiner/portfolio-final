@@ -19,7 +19,7 @@ export class PortfolioComponent {
 
   projects = [
     {
-      id: 4,
+      id: 3,
       date: "11/2024",
       imageMobile: "demon-woods-mobile.png",
       imageTablet: "demon-woods-tablet.png",
@@ -34,7 +34,7 @@ export class PortfolioComponent {
       webLink: "https://demon-woods.anita-gasteiner.at"
     },
     {
-      id: 3,
+      id: 2,
       date: "07/2024",
       imageMobile: "join-mobile.png",
       imageTablet: "join-tablet.png",
@@ -49,7 +49,7 @@ export class PortfolioComponent {
       webLink: "https://join.anita-gasteiner.at/"
     },
     {
-      id: 2,
+      id: 1,
       date: "05/2024",
       imageMobile: "pokedex-mobile.png",
       imageTablet: "pokedex-tablet.png",
@@ -62,22 +62,22 @@ export class PortfolioComponent {
       position: "right",
       gitLink: "https://github.com/anitagasteiner/Pokedex",
       webLink: "https://pokedex.anita-gasteiner.at/"
-    },
-    {
-      id: 1,
-      date: "04/2024",
-      imageMobile: "instaclone-mobile.png",
-      imageTablet: "instaclone-tablet.png",
-      imageMonitor: "instaclone-monitor.png",
-      orientation: "portrait",
-      title: "Instaclone",
-      skills: "HTML | CSS | JavaScript",
-      description: "Simple social network: Post what you would like to say, like and comment other posts or add new users.",
-      descriptionGerman: "Einfaches soziales Netzwerk: Erstellen Sie Beiträge, vergeben Sie Likes und kommentieren Sie andere Beiträge oder fügen Sie Personen hinzu.",
-      position: "left",
-      gitLink: "https://github.com/anitagasteiner/instaclone",
-      webLink: "https://instaclone.anita-gasteiner.at/"
     }
+    // {
+    //   id: 1,
+    //   date: "04/2024",
+    //   imageMobile: "instaclone-mobile.png",
+    //   imageTablet: "instaclone-tablet.png",
+    //   imageMonitor: "instaclone-monitor.png",
+    //   orientation: "portrait",
+    //   title: "Instaclone",
+    //   skills: "HTML | CSS | JavaScript",
+    //   description: "Simple social network: Post what you would like to say, like and comment other posts or add new users.",
+    //   descriptionGerman: "Einfaches soziales Netzwerk: Erstellen Sie Beiträge, vergeben Sie Likes und kommentieren Sie andere Beiträge oder fügen Sie Personen hinzu.",
+    //   position: "left",
+    //   gitLink: "https://github.com/anitagasteiner/instaclone",
+    //   webLink: "https://instaclone.anita-gasteiner.at/"
+    // }
   ];
 
 }

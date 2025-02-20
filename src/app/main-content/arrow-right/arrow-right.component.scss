@@ -31,7 +31,7 @@
             display: flex;
             align-items: flex-end;
             justify-content: flex-end;
-            transition: translate 3s ease-in-out;
+            transition: translate 2s ease-in-out;
             @include bp.lg {
                 height: 142px;
                 width: 142px;

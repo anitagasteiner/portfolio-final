@@ -7,6 +7,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { GeneralService } from '../general.service';
 import { ArrowRightComponent } from './arrow-right/arrow-right.component';
 import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
+import { ArrowContactComponent } from './arrow-contact/arrow-contact.component';
 // import { ReferencesComponent } from './references/references.component';
 
 @Component({
@@ -20,7 +21,8 @@ import { ArrowLeftComponent } from './arrow-left/arrow-left.component';
     PortfolioComponent,
     // ReferencesComponent,
     ArrowLeftComponent,
-    ArrowRightComponent
+    ArrowRightComponent,
+    ArrowContactComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'

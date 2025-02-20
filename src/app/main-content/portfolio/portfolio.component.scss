@@ -1,6 +1,11 @@
+@use './../../shared/breakpoints.scss' as bp;
+
 .projects-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
+    @include bp.xl {
+        gap: 150px;
+    }
 }

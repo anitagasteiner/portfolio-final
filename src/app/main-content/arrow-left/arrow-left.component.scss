@@ -2,6 +2,7 @@
 
 .arrow-container {
     height: 260px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -37,6 +38,7 @@
             }
             >img {
                 margin: -28px;
+                height: 167px;
                 object-fit: contain;
                 @include bp.lg {
                     margin: -36px;

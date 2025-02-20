@@ -1,7 +1,9 @@
 @use './../../shared/breakpoints.scss' as bp;
 
 .arrow-container {
+    background-color: green;
     height: 260px;
+    margin-bottom: 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,13 +11,12 @@
         height: 310px;
     }
     >div {
-        width: 65%;
+        width: 55%;
         height: inherit;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
         justify-content: flex-start;
-        transition: display 3s, align-items 3s, justify-content 3s;
         @include bp.xs-max {
             width: 80%
         }
@@ -23,17 +24,27 @@
             width: 50%;
         }
         @include bp.md {
-            width: 40%;
-        }
-        @include bp.xl {
-            width: 30%;
+            width: 80%;
         }
         >div {
-            width: inherit;
+            background-color: red;
+            height: 112px;
+            width: 112px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            transition: translate 3s ease-in-out;
+            @include bp.lg {
+                height: 142px;
+                width: 142px;
+            }
             >img {
-                height: 160px;
+                margin: -28px;
+                height: 167px;
+                object-fit: contain;
                 @include bp.lg {
-                    height: 210px;
+                    margin: -36px;
+                    height: 215px;
                 }
             }
         }
@@ -41,7 +52,20 @@
 }
 
 .move {
-    display: flex;
-    align-items: flex-end !important;
-    justify-content: flex-end !important;
+    translate: -70px 148px;
+    @include bp.xs-max {
+        translate: -90px 148px;
+    }
+    @include bp.sm {
+        translate: -130px 148px;
+    }
+    @include bp.md {
+        translate: -250px 148px;
+    }
+    @include bp.lg {
+        translate: -280px 168px;
+    }
+    @include bp.xl {
+        translate: -320px 168px;
+    }
 }

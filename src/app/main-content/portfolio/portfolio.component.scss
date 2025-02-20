@@ -6,6 +6,7 @@
     justify-content: flex-start;
     gap: 24px;
     @include bp.xl {
-        gap: 150px;
+        padding-top: 28px;
+        gap: 132px;
     }
 }

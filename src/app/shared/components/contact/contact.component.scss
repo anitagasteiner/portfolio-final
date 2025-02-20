@@ -1,6 +1,7 @@
 @use './../../../shared/breakpoints.scss' as bp;
 
 .bg-diagonal {
+    margin-bottom: -1px;
     height: 90px;
     background: linear-gradient(to bottom left, rgba(255, 252, 243, 0) 49%, rgba(0, 0, 0, 1) 51%);
     @include bp.lg {

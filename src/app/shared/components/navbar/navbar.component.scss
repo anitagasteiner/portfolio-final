@@ -174,3 +174,10 @@ h2 {
         width: 110px;
     }
 }
+
+@keyframes color {
+    0% { color: rgba(255, 252, 243, 1); }
+    50% { color: rgba(255, 252, 243, 1); }
+    51% { color: rgba(0, 188, 143, 1); }
+    100% { color: rgba(0, 188, 143, 1); }
+}

@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { GeneralService } from '../../general.service';
 
@@ -13,9 +13,18 @@ import { GeneralService } from '../../general.service';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements AfterViewInit {
 
   generalService = inject(GeneralService);
+
+  @ViewChild('portfolio') portfolio!: ElementRef;
+
+  ngAfterViewInit() {
+    if (this.generalService.currentSection == 'portfolio') {
+      this.portfolio.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
+      this.generalService.currentSection = '';
+    }
+  }
 
   projects = [
     {

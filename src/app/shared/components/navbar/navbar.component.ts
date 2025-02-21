@@ -16,8 +16,6 @@ export class NavbarComponent {
 
   generalService = inject(GeneralService);
 
-  aboutId = '#about';
-
   constructor() {
     this.generalService.scrollToTop();
   }

@@ -4,8 +4,8 @@
 
         <nav>
             <div>
-                <a class="nav-link" href="#about" (click)="this.generalService.showNavBtnOpen()">
-                <!-- <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen()"> -->
+                <!-- <a class="nav-link" href="#about" (click)="this.generalService.showNavBtnOpen()"> -->
+                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.setCurrentSection('aboutMe')">
                     <!-- fragment="about" -->
                     @if (this.generalService.currentLanguage == 'de') {
                         Über mich
@@ -16,7 +16,7 @@
                 </a>
             </div>
             <div>
-                <a class="nav-link" href="#skills" (click)="this.generalService.showNavBtnOpen()">
+                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.setCurrentSection('mySkills')">
                     @if (this.generalService.currentLanguage == 'de') {
                         Meine Skills
                     }
@@ -26,7 +26,7 @@
                     </a>
             </div>
             <div>
-                <a class="nav-link" href="#portfolio" (click)="this.generalService.showNavBtnOpen()">Portfolio</a>
+                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.setCurrentSection('portfolio')">Portfolio</a>
             </div>
         </nav>
 

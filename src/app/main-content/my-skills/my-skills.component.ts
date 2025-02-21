@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { SkillComponent } from './skill/skill.component';
 import { GeneralService } from '../../general.service';
 
@@ -13,9 +13,18 @@ import { GeneralService } from '../../general.service';
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'
 })
-export class MySkillsComponent {
+export class MySkillsComponent implements AfterViewInit {
 
   generalService = inject(GeneralService);
+
+  @ViewChild('mySkills') mySkills!: ElementRef;
+
+  ngAfterViewInit() {
+    if (this.generalService.currentSection == 'mySkills') {
+      this.mySkills.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
+      this.generalService.currentSection = '';
+    }
+  }
 
   skills = [
     {

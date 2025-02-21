@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
+
 export class GeneralService {
 
   navbarOpened: boolean = false;
@@ -22,6 +23,12 @@ export class GeneralService {
   nameText: string = 'Ihr Name';
   mailText: string = 'Ihre E-Mail-Adresse';
   messageText: string = 'Ihre Nachricht';
+
+  currentSection: string = '';
+
+  setCurrentSection(section: string) {
+    this.currentSection = section;
+  }
 
   getLanguageFromLocalStorage() {
     const language = localStorage.getItem('language');

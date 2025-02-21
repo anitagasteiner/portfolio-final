@@ -2,14 +2,14 @@
 
     <div class="content-container">
 
-        <img src="../../../../assets/img/logo-ag.png">
+        <img src="../../../../assets/img/logo-ag.png" alt="">
         <div>
             <div class="language-container" (click)="switchLanguage()">
-                <img src="../../../../assets/img/world.png">
+                <img src="../../../../assets/img/world.png" alt="">
                 <div>{{languageSwitch}}</div>
             </div>
             <a routerLink="{{this.generalService.currentNavLink}}" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling()">
-                <img [src]="generalService.currentNavBtn">
+                <img [src]="generalService.currentNavBtn" alt="Navigation bar">
             </a>        
         </div>
 

@@ -117,19 +117,8 @@ p {
 }
 
 @keyframes color {
-    0% {
-        color: rgba(0, 0, 0, 1);
-    }
-
-    50% {
-        color: rgba(0, 0, 0, 1);
-    }
-
-    51% {
-        color: rgba(0, 188, 143, 1);
-    }
-
-    100% {
-        color: rgba(0, 188, 143, 1);
-    }
+    0% { color: rgba(0, 0, 0, 1); }
+    50% { color: rgba(0, 0, 0, 1); }
+    51% { color: rgba(0, 188, 143, 1); }
+    100% { color: rgba(0, 188, 143, 1); }
 }

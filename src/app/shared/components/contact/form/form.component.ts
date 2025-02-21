@@ -57,11 +57,13 @@ export class FormComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          // complete: () => console.info('send post complete'),
+          complete: () => this.showMailNotSentInfo(),
         });
-    } else {
-      this.showMailNotSentInfo();
     }
+    // else {
+    //   this.showMailNotSentInfo();
+    // }
     // else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       // Um zu testen, füge ich hier hinzu, was passieren soll.
       // ngForm.resetForm();

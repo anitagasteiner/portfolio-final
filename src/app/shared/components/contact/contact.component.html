@@ -37,7 +37,7 @@
     <div class="link-legal-notice-container">
 
         <div class="link-legal-notice">
-            <a routerLink="imprint" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()">
+            <a routerLink="imprint" routerLinkActive="active"> <!-- (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()" -->
                 @if (this.generalService.currentLanguage == 'de') {
                     Impressum
                 }

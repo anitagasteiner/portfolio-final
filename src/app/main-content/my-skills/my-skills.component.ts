@@ -19,7 +19,7 @@ export class MySkillsComponent implements AfterViewInit {
 
   @ViewChild('mySkills') mySkills!: ElementRef;
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     if (this.generalService.currentSection == 'mySkills') {
       this.mySkills.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
       this.generalService.currentSection = '';

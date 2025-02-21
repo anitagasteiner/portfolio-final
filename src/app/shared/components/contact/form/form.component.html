@@ -107,7 +107,7 @@
                 @if (this.generalService.currentLanguage == 'en') {
                     I've read the
                     <div>
-                        <a routerLink="privacy-policy" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()">privacy policy</a>
+                        <a routerLink="privacy-policy" routerLinkActive="active">privacy policy</a> <!-- (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()" -->
                     </div>
                     and agree to the processing of my data as outlined.
                 }

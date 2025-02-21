@@ -14,10 +14,12 @@ export class AboutMeComponent implements AfterViewInit {
 
   @ViewChild('aboutMe') aboutMe!: ElementRef;
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     if (this.generalService.currentSection == 'aboutMe') {
-      this.aboutMe.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
-      this.generalService.currentSection = '';
+      // setTimeout(() => {
+        this.aboutMe.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
+        this.generalService.currentSection = '';
+      // }, 20);
     }
   }
 

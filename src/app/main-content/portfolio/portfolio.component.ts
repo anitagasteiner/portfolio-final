@@ -19,7 +19,7 @@ export class PortfolioComponent implements AfterViewInit {
 
   @ViewChild('portfolio') portfolio!: ElementRef;
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     if (this.generalService.currentSection == 'portfolio') {
       this.portfolio.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start'});
       this.generalService.currentSection = '';

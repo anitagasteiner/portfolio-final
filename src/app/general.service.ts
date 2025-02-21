@@ -27,6 +27,7 @@ export class GeneralService {
   currentSection: string = '';
 
   setCurrentSection(section: string) {
+    this.currentSection = '';
     this.currentSection = section;
   }
 
@@ -42,13 +43,13 @@ export class GeneralService {
       this.animateNavBtnClose();
       setTimeout(() => {
         this.showNavBtnClose();        
-      }, 900);      
+      }, 600);      
       this.navbarOpened = true;
     } else if (this.navbarOpened) {
       this.animateNavBtnOpen();
       setTimeout(() => {
         this.showNavBtnOpen();        
-      }, 900);
+      }, 600);
       this.navbarOpened = false;
     }
   }
@@ -60,27 +61,27 @@ export class GeneralService {
 
   showNavBtnOpen() {
       this.currentNavBtn = this.navBtnOpen;
-      this.currentNavLink = 'navbar';     
+      this.currentNavLink = 'navbar';
   }
 
   animateNavBtnOpen() {
     this.currentNavBtn = this.changeNavBtnArray[2];
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[1];      
-    }, 300);
+    }, 200);
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[0];      
-    }, 600);    
+    }, 400);    
   }
 
   animateNavBtnClose() {
     this.currentNavBtn = this.changeNavBtnArray[0];
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[1];      
-    }, 300);
+    }, 200);
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[2];
-    }, 600);
+    }, 400);
   }
 
   closeNavbar() {

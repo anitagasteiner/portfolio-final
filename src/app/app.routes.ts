@@ -9,4 +9,5 @@ export const routes: Routes = [
     { path: 'navbar', component: NavbarComponent },
     { path: 'privacy-policy', component: PrivacyPolicyComponent },
     { path: 'imprint', component: ImprintComponent },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];

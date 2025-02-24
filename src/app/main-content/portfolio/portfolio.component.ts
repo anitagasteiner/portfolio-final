@@ -51,8 +51,8 @@ export class PortfolioComponent implements AfterViewInit {
       orientation: "portrait",
       title: "Join",
       skills: "HTML | CSS | JavaScript | Git | Firebase",
-      description: "Project management tool inspired by the kanban system: Use the task manager to create and organize tasks using drag and drop functions. Assign users and categories.",
-      descriptionGerman: "Projektmanagement-Tool nach dem Kanban-System: Erstellen und organisieren Sie Aufgaben mithilfe von Drag & Drop. Weisen Sie den Aufgaben Personen und Kategorien zu.",
+      description: "Project management tool inspired by the kanban system: Use the task manager to create and organize tasks using drag and drop functions. Assign users and categories. Organize and edit your contacts.",
+      descriptionGerman: "Projektmanagement-Tool nach dem Kanban-System: Erstellen und organisieren Sie Aufgaben mithilfe von Drag & Drop. Weisen Sie den Aufgaben Personen und Kategorien zu. Verwalten und bearbeiten Sie Ihre Kontakte.",
       position: "left",
       gitLink: "https://github.com/anitagasteiner/join-239-final",
       webLink: "https://join.anita-gasteiner.at/"

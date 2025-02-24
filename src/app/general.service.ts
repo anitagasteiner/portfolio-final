@@ -43,13 +43,13 @@ export class GeneralService {
       this.animateNavBtnClose();
       setTimeout(() => {
         this.showNavBtnClose();        
-      }, 600);      
+      }, 120);      
       this.navbarOpened = true;
     } else if (this.navbarOpened) {
       this.animateNavBtnOpen();
       setTimeout(() => {
         this.showNavBtnOpen();        
-      }, 600);
+      }, 120);
       this.navbarOpened = false;
     }
   }
@@ -68,20 +68,20 @@ export class GeneralService {
     this.currentNavBtn = this.changeNavBtnArray[2];
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[1];      
-    }, 200);
+    }, 40);
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[0];      
-    }, 400);    
+    }, 80);    
   }
 
   animateNavBtnClose() {
     this.currentNavBtn = this.changeNavBtnArray[0];
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[1];      
-    }, 200);
+    }, 40);
     setTimeout(() => {
       this.currentNavBtn = this.changeNavBtnArray[2];
-    }, 400);
+    }, 80);
   }
 
   closeNavbar() {

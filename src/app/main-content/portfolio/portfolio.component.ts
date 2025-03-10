@@ -65,7 +65,7 @@ export class PortfolioComponent implements AfterViewInit {
       imageMonitor: "pokedex-monitor.png",
       orientation: "portrait",
       title: "Pokédex",
-      skills: "API | JavaScript | Git | HTML | CSS",
+      skills: "REST-API | JavaScript | Git | HTML | CSS",
       description: "Pokémon register: Click through the different Pokémon characters and get information about them.",
       descriptionGerman: "Pokémon-Verzeichnis: Klicken Sie sich durch die verschiedenen Pokémon-Charaktere und erhalten Sie Informationen über sie.",
       position: "right",

@@ -1,8 +1,12 @@
 {
     "app": {
         "about": {
-            "title": "TEST: About me",
-            "text": "TEST: As a front-end developer, I&nbsp;enjoy helping designers and companies to bring their ideas into real life."
+            "title": "About me",
+            "para-1": "As a front-end developer, I&nbsp;enjoy helping designers and companies to bring their ideas into real life.",
+            "para-2": "If you think I&nbsp;would be a&nbsp;good match for your projects, contact me! I&nbsp;am looking forward to a&nbsp;job in a&nbsp;junior developer position.",
+            "base": "Based in Vienna",
+            "remote": "Open to work remotely",
+            "btn-text": "Contact"
         }
     }
 }

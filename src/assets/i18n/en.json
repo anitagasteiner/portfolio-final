@@ -7,6 +7,14 @@
             "base": "Based in Vienna",
             "remote": "Open to work remotely",
             "btn-text": "Contact"
+        },
+        "skills": {
+            "para-1": "Don't see the skill you need?",
+            "link": "Contact&nbsp;me.",
+            "para-2": "I'm always ready to learn."
+        },
+        "portfolio": {
+            "main-text": "You want to see my skills in action? Explore a&nbsp;selection of my work here and interact with my projects."
         }
     }
 }

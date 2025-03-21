@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { SkillComponent } from './skill/skill.component';
 import { GeneralService } from '../../general.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-my-skills',
   standalone: true,
   imports: [
     CommonModule,
-    SkillComponent    
+    SkillComponent,
+    TranslatePipe
   ],
   templateUrl: './my-skills.component.html',
   styleUrl: './my-skills.component.scss'

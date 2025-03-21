@@ -1,13 +1,13 @@
 <div #portfolio class="main-width">
 
     <h2 id="portfolio">Portfolio</h2>
-    <p>
-        @if (this.generalService.currentLanguage == 'de') {
+    <p [innerHTML]="'app.portfolio.main-text' | translate">
+        <!-- @if (this.generalService.currentLanguage == 'de') {
             Hier können Sie meine Skills in Aktion sehen: Scrollen Sie durch eine Auswahl meiner Arbeit und klicken Sie sich in meine Projekte.
         }
         @if (this.generalService.currentLanguage == 'en') {
             You want to see my skills in action? Explore a&nbsp;selection of my work here and interact with my projects.
-        }    
+        }     -->
     </p>
     <div class="projects-container">
         @for (project of projects; track project.title; let index = $index) {

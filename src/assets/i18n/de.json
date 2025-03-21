@@ -7,6 +7,14 @@
             "base": "Wohnhaft in Wien",
             "remote": "Gerne auch Telearbeit",
             "btn-text": "Kontakt"
+        },
+        "skills": {
+            "para-1": "Sie brauchen weitere Skills?",
+            "link": "Kontaktieren Sie mich.",
+            "para-2": "Ich bin immer bereit zu lernen."
+        },
+        "portfolio": {
+            "main-text": "Hier können Sie meine Skills in Aktion sehen: Scrollen Sie durch eine Auswahl meiner Arbeit und klicken Sie sich in meine Projekte."
         }
     }
 }

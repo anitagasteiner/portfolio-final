@@ -2,13 +2,15 @@ import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
 import { ProjectComponent } from './project/project.component';
 import { GeneralService } from '../../general.service';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
   imports: [
     CommonModule,
-    ProjectComponent
+    ProjectComponent,
+    TranslatePipe
   ],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'

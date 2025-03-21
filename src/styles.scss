@@ -73,6 +73,9 @@ h1 {
     font-weight: 800;
     text-align: center;
     margin: 0;
+    @include bp.xs-max {
+        font-size: 28px;
+    }
     @include bp.sm {
         font-size: 45px;
     }

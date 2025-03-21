@@ -28,13 +28,16 @@
 
 .line {
     border: 2.5px solid rgba(0, 0, 0, 1);
-    width: 100px;
+    width: 150px;
     height: 0;
+    @include bp.xs-max {
+        width: 110px;
+    }
     @include bp.sm {
-        width: 180px;
+        width: 250px;
     }
     @include bp.lg {
-        width: 360px;
+        width: 480px;
     }
 }
 

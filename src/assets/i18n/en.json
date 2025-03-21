@@ -37,6 +37,9 @@
         "privacy-policy": {
             "title": "Privacy Policy",
             "source": "Source:"
+        },
+        "imprint": {
+            "title": "Legal Notice"
         }
     }
 }

@@ -1,13 +1,13 @@
 <div class="main-container main-width">
 
     <div class="head-container">        
-        <h3>
-            @if (this.generalService.currentLanguage == 'de') {
+        <h3>{{ 'app.imprint.title' | translate }}
+            <!-- @if (this.generalService.currentLanguage == 'de') {
                 Impressum
             }
             @if (this.generalService.currentLanguage == 'en') {
                 Legal notice
-            }            
+            }             -->
         </h3>
         <a routerLink="" routerLinkActive="active"><img src="./../../assets/img/btn-close.svg"></a>
     </div>

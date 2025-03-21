@@ -15,6 +15,24 @@
         },
         "portfolio": {
             "main-text": "Hier können Sie meine Skills in Aktion sehen: Scrollen Sie durch eine Auswahl meiner Arbeit und klicken Sie sich in meine Projekte."
+        },
+        "contact": {
+            "title": "Kontakt",
+            "subtitle": "Sie stehen vor einem neuen Projekt?",
+            "text": "Kontaktieren Sie mich. Wir&nbsp;besprechen Ihre Ideen und setzen&nbsp;sie&nbsp;um.",
+            "link-legal-notice": "Impressum"
+        },
+        "contact-form": {
+            "name": "Ihr Name",
+            "name-notification": "Bitte geben Sie Ihren Namen ein.",
+            "mail": "Ihre E-Mail-Adresse",
+            "mail-notification": "Bitte geben Sie Ihre E-Mail-Adresse ein.",
+            "message": "Ihre Nachricht",
+            "message-notification": "Bitte geben Sie eine Nachricht ein.",
+            "privacy-text-1": "Die",
+            "privacy-text-2": "habe ich ge&zwj;le&zwj;sen und ich bin mit der dementsprechenden Verarbeitung meiner Daten einverstanden.",
+            "privacy-notification": "Bitte lesen Sie die DS-Erklärung.",
+            "sent-notification": "Vielen Dank für Ihre Nachricht."
         }
     }
 }

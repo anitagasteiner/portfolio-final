@@ -4,8 +4,13 @@
 
 <div class="main-container">
 
+    <!-- [innerHTML]="'app.about.para-2' | translate" -->
+
     <div class="head-container">
-        @if (this.generalService.currentLanguage == 'de') {
+        <h2 [innerHTML]="'app.contact.title' | translate"></h2>
+        <div class="question" [innerHTML]="'app.contact.subtitle' | translate"></div>
+        <div class="text" [innerHTML]="'app.contact.text' | translate"></div>
+        <!-- @if (this.generalService.currentLanguage == 'de') {
             <h2>Kontakt</h2>
             <div class="question">Sie stehen vor einem neuen Projekt?</div>
             <div class="text">Kontaktieren Sie mich. Wir&nbsp;besprechen Ihre Ideen und setzen&nbsp;sie&nbsp;um.</div>
@@ -14,7 +19,7 @@
             <h2>Say hi!</h2>
             <div class="question">Want to discuss a new project?</div>
             <div class="text">Say hello! Let's discuss your ideas and make it happen.</div>
-        }
+        } -->
     </div>  
 
     <app-form></app-form>
@@ -38,12 +43,13 @@
 
         <div class="link-legal-notice">
             <a routerLink="imprint" routerLinkActive="active"> <!-- (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()" -->
-                @if (this.generalService.currentLanguage == 'de') {
+                {{ 'app.contact.link-legal-notice' | translate }}
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Impressum
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Legal notice
-                }
+                } -->
             </a>
         </div>
 

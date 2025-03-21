@@ -4,23 +4,24 @@
 
         <input class="name-mail-input" #name="ngModel" minlength="2" [(ngModel)]="contactData.name" type="text" name="name" id="name" placeholder="{{this.generalService.nameText}}" onfocus="this.placeholder=''" required>
 
-        <legend>
-            @if (this.generalService.currentLanguage == 'de') {
+        <legend>{{ 'app.contact-form.name' | translate }}
+            <!-- @if (this.generalService.currentLanguage == 'de') {
                 Ihr Name
             }
             @if (this.generalService.currentLanguage == 'en') {
                 Your name
-            }
+            } -->
         </legend>
 
         @if (!name.valid && name.touched && !name.disabled) {
             <span class="notification">
-                @if (this.generalService.currentLanguage == 'de') {
+                {{ 'app.contact-form.name-notification' | translate }}
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Bitte geben Sie Ihren Namen ein.
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Please enter your name.
-                }
+                } -->
             </span>
             <img class="notification-img" src="./../../../../../assets/img/message-error.svg">
         }
@@ -34,23 +35,24 @@
 
         <input class="name-mail-input" #email="ngModel" [(ngModel)]="contactData.email" type="email" name="email" id="email" placeholder="{{this.generalService.mailText}}" onfocus="this.placeholder=''" required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
 
-        <legend>
-            @if (this.generalService.currentLanguage == 'de') {
+        <legend>{{ 'app.contact-form.mail' | translate }}
+            <!-- @if (this.generalService.currentLanguage == 'de') {
                 Ihre E-Mail-Adresse
             }
             @if (this.generalService.currentLanguage == 'en') {
                 Your email
-            }
+            } -->
         </legend>
 
         @if (!email.valid && email.touched && !email.disabled) {
             <span class="notification">
-                @if (this.generalService.currentLanguage == 'de') {
+                {{ 'app.contact-form.mail-notification' | translate }}
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Bitte geben Sie Ihre E-Mail-Adresse ein.
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Please enter your email.
-                }
+                } -->
             </span>
             <img class="notification-img" src="./../../../../../assets/img/message-error.svg">
         }
@@ -64,23 +66,24 @@
 
         <textarea #message="ngModel" minlength="20" [(ngModel)]="contactData.message" name="message" id="message" placeholder="{{this.generalService.messageText}}" onfocus="this.placeholder=''" required></textarea>
 
-        <legend>
-            @if (this.generalService.currentLanguage == 'de') {
+        <legend>{{ 'app.contact-form.message' | translate }}
+            <!-- @if (this.generalService.currentLanguage == 'de') {
                 Ihre Nachricht
             }
             @if (this.generalService.currentLanguage == 'en') {
                 Your message
-            }                
+            }                 -->
         </legend>
 
         @if (!message.valid && message.touched && !message.disabled) {
             <span class="notification">
-                @if (this.generalService.currentLanguage == 'de') {
+                {{ 'app.contact-form.message-notification' | translate }}
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Bitte geben Sie eine Nachricht ein.
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Please enter a message.
-                }
+                } -->
             </span>
             <img class="notification-img-message" src="./../../../../../assets/img/message-error.svg">
         }
@@ -97,32 +100,35 @@
             <input #privacy="ngModel" [(ngModel)]="contactData.checkbox" type="checkbox" id="privacy" name="privacy" required>
 
             <label for="privacy">
+                {{ 'app.contact-form.privacy-text-1' | translate }}
                 @if (this.generalService.currentLanguage == 'de') {
-                    Die
+                    <!-- Die -->
                     <div class="privacy-policy-german">
                         <a routerLink="privacy-policy" routerLinkActive="active" (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()">Datenschutzerklärung</a>
                     </div>
-                    habe ich ge&zwj;le&zwj;sen und ich bin mit der dementsprechenden Verarbeitung meiner Daten einverstanden.
-                }
+                    <!-- habe ich ge&zwj;le&zwj;sen und ich bin mit der dementsprechenden Verarbeitung meiner Daten einverstanden. -->
+                }                
                 @if (this.generalService.currentLanguage == 'en') {
-                    I've read the
+                    <!-- I've read the -->
                     <div>
                         <a routerLink="privacy-policy" routerLinkActive="active">privacy policy</a> <!-- (click)="this.generalService.showNavBtnOpen(); this.generalService.closeNavbar()" -->
                     </div>
-                    and agree to the processing of my data as outlined.
+                    <!-- and agree to the processing of my data as outlined. -->
                 }
+                <span [innerHTML]="'app.contact-form.privacy-text-2' | translate"></span>
+                <!-- {{ 'app.contact-form.privacy-text-2' | translate }} -->
             </label>
 
         </div>
 
         @if (!privacy.valid && privacy.touched && !privacy.disabled) {
-            <span class="notification privacy-notification">
-                @if (this.generalService.currentLanguage == 'de') {
+            <span class="notification privacy-notification" [innerHTML]="'app.contact-form.privacy-notification' | translate">
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Bitte lesen Sie die DS-Erklärung.
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Please accept the privacy policy.
-                }
+                } -->
             </span>
         }
 
@@ -136,13 +142,13 @@
             <input class="btn-send" type="submit" value="{{this.generalService.btnText}}">
         }
         @if (mailSent) {
-            <div class="sent-notification">
-                @if (this.generalService.currentLanguage == 'de') {
+            <div class="sent-notification" [innerHTML]="'app.contact-form.sent-notification' | translate">
+                <!-- @if (this.generalService.currentLanguage == 'de') {
                     Vielen Dank für Ihre Nachricht.
                 }
                 @if (this.generalService.currentLanguage == 'en') {
                     Thank you for your message.
-                }
+                } -->
             </div>
         }
     </div>

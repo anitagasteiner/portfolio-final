@@ -4,6 +4,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { GeneralService } from '../../../../general.service';
 import { CommonModule } from '@angular/common';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-form',
@@ -12,7 +13,8 @@ import { CommonModule } from '@angular/common';
     CommonModule,
     FormsModule,
     RouterLink,
-    RouterLinkActive
+    RouterLinkActive,
+    TranslatePipe
   ],
   templateUrl: './form.component.html',
   styleUrl: './form.component.scss'

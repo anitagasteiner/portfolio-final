@@ -1,13 +1,13 @@
 <div class="main-container main-width">
     
     <div class="head-container">
-        <h3>
-            @if (this.generalService.currentLanguage == 'de') {
+        <h3>{{ 'app.privacy-policy.title' | translate }}
+            <!-- @if (this.generalService.currentLanguage == 'de') {
                 Datenschutzerklärung
             }
             @if (this.generalService.currentLanguage == 'en') {
                 Privacy Policy
-            }
+            } -->
         </h3>
         <a routerLink="" routerLinkActive="active"><img src="./../../assets/img/btn-close.svg"></a>
     </div>
@@ -126,12 +126,13 @@
     }
     
     <p class="source"><b>
-        @if (this.generalService.currentLanguage == 'de') {
+        {{ 'app.privacy-policy.source' | translate }}
+        <!-- @if (this.generalService.currentLanguage == 'de') {
             Quelle:
         }
         @if (this.generalService.currentLanguage == 'en') {
             Source:
-        }        
+        }         -->
         </b><a href="https://www.fairesrecht.at/kostenlos-datenschutzerklaerung-erstellen-generator.php" target="_blank">Datenschutzgenerator Österreich DSGVO</a>
     </p>
 

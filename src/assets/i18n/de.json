@@ -33,6 +33,10 @@
             "privacy-text-2": "habe ich ge&zwj;le&zwj;sen und ich bin mit der dementsprechenden Verarbeitung meiner Daten einverstanden.",
             "privacy-notification": "Bitte lesen Sie die DS-Erklärung.",
             "sent-notification": "Vielen Dank für Ihre Nachricht."
+        },
+        "privacy-policy": {
+            "title": "Datenschutzerklärung",
+            "source": "Quelle:"
         }
     }
 }

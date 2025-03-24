@@ -3,6 +3,11 @@
         "header": {
             "language": "Deutsch"
         },
+        "navbar": {
+            "about": "About me",
+            "skills": "My skills",
+            "contact": "Say hi!"
+        },
         "about": {
             "title": "About me",
             "para-1": "As a front-end developer, I&nbsp;enjoy helping designers and companies to bring their ideas into real life.",

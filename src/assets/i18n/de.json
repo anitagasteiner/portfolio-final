@@ -3,6 +3,11 @@
         "header": {
             "language": "English"
         },
+        "navbar": {
+            "about": "Über mich",
+            "skills": "Meine Skills",
+            "contact": "Kontakt"
+        },
         "about": {
             "title": "Über mich",
             "para-1": "Als Frontend-Entwicklerin begeistere ich mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen.",

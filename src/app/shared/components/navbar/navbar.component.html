@@ -4,25 +4,10 @@
 
         <nav>
             <div>
-                <!-- <a class="nav-link" href="#about" (click)="this.generalService.showNavBtnOpen()"> -->
-                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling(); this.generalService.setCurrentSection('aboutMe')">
-                    @if (this.generalService.currentLanguage == 'de') {
-                        Über mich
-                    }
-                    @if (this.generalService.currentLanguage == 'en') {
-                        About me
-                    }
-                </a>
+                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling(); this.generalService.setCurrentSection('aboutMe')">{{ 'app.navbar.about' | translate }}</a>
             </div>
             <div>
-                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling(); this.generalService.setCurrentSection('mySkills')">
-                    @if (this.generalService.currentLanguage == 'de') {
-                        Meine Skills
-                    }
-                    @if (this.generalService.currentLanguage == 'en') {
-                        My skills
-                    }
-                    </a>
+                <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling(); this.generalService.setCurrentSection('mySkills')">{{ 'app.navbar.skills' | translate }}</a>
             </div>
             <div>
                 <a class="nav-link" routerLink="" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling(); this.generalService.setCurrentSection('portfolio')">Portfolio</a>
@@ -38,14 +23,7 @@
                 <div class="contact-content">
 
                     <div class="contact-text">
-                        <h2>
-                            @if (this.generalService.currentLanguage == 'de') {
-                                Kontakt
-                            }
-                            @if (this.generalService.currentLanguage == 'en') {
-                                Say hi!
-                            }
-                        </h2>
+                        <h2>{{ 'app.navbar.contact' | translate }}</h2>
                         <div class="mail-container">contact&#64;anita-gasteiner.at</div>
                     </div>
 

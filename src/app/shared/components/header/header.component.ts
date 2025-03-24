@@ -18,7 +18,7 @@ import translationsEN from './../../../../assets/i18n/en.json';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
   generalService = inject(GeneralService);
 
@@ -27,45 +27,15 @@ export class HeaderComponent implements OnInit {
     this.translate.setDefaultLang('de');  
     this.translate.setTranslation('de', translationsDE);
     this.translate.setTranslation('en', translationsEN);
+    this.generalService.getLanguageFromLocalStorage();
     this.setLanguage();    
   }
-
-  ngOnInit() {
-    this.generalService.getLanguageFromLocalStorage();
-    // this.setBtnLanguage();
-  }
-
-  // translateLanguageTo(language: string) {
-  //   this.translate.use(language);
-  // }
 
   setLanguage() {
     if (this.generalService.currentLanguage == 'de') {      
       this.translate.use('de');
     } else if (this.generalService.currentLanguage == 'en') {
       this.translate.use('en');
-    }    
-    // const language = localStorage.getItem('language');
-    // if (language == 'de') {
-    //   this.translate.setDefaultLang('de');
-    //   this.translate.use('de');
-    // } else if (language == 'en') {
-    //   this.translate.setDefaultLang('en');
-    //   this.translate.use('en');
-    // } else {
-    //   this.translate.setDefaultLang('de');
-    //   this.translate.use('de');
-    // }    
-  }
-
-  setBtnLanguage() {
-    const language = localStorage.getItem('language');
-    if (language == 'de') {
-      // this.languageSwitch = 'English';
-      this.translate.use('en');
-    } else if (language == 'en') {
-      // this.languageSwitch = 'Deutsch';
-      this.translate.use('de');
     }
   }
 

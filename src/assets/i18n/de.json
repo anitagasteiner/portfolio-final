@@ -1,5 +1,8 @@
 {
     "app": {
+        "header": {
+            "language": "English"
+        },
         "about": {
             "title": "Über mich",
             "para-1": "Als Frontend-Entwicklerin begeistere ich mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen.",

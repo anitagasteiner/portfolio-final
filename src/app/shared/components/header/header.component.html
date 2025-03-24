@@ -4,13 +4,9 @@
 
         <img src="../../../../assets/img/logo-ag.png" alt="">
         <div>
-            <div>
-                <button (click)="translateLanguageTo('en')">EN</button>
-                <button (click)="translateLanguageTo('de')">DE</button>
-            </div>
             <div class="language-container" (click)="switchLanguage()">
                 <img src="../../../../assets/img/world.png" alt="">
-                <div>{{languageSwitch}}</div>
+                <div>{{ 'app.header.language' | translate }}</div>
             </div>
             <a routerLink="{{this.generalService.currentNavLink}}" routerLinkActive="active" (click)="this.generalService.changeNavBtn(); this.generalService.handleScrolling()">
                 <img [src]="generalService.currentNavBtn" alt="Navigation bar">

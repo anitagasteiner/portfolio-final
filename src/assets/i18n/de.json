@@ -10,10 +10,10 @@
         },
         "about": {
             "title": "Über mich",
-            "para-1": "Als Frontend-Entwicklerin begeistere ich mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen.",
+            "para-1": "Als Frontend-Developerin begeistere ich mich dafür, Ihre besten Ideen zu realisieren und Ihre Designs ansprechend umzusetzen.",
             "para-2": "Wenn Sie mich gerne für Ihre Projekte einsetzen möchten, kontaktieren Sie mich! Ich freue mich auf eine Position als Junior Developer.",
             "base": "Wohnhaft in Wien",
-            "remote": "Gerne auch Telearbeit",
+            "remote": "Gerne auch remote",
             "btn-text": "Kontakt"
         },
         "skills": {

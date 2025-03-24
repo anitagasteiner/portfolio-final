@@ -1,6 +1,13 @@
 <div class="main-container main-width">
     <div class="head-container">
-        <h1>Frontend<br>Developerin</h1>
+
+        @if (this.generalService.currentLanguage == 'de') {
+            <h1>Frontend<br>Developerin</h1>
+        }
+        @if (this.generalService.currentLanguage == 'en') {            
+            <h1 [ngClass]="'h1-english'">Frontend<br>Developer</h1>
+        }
+
         <div class="name-container">
             <div class="line"></div>
             <div class="name">Anita Gasteiner</div>

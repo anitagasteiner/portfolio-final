@@ -74,13 +74,26 @@ h1 {
     text-align: center;
     margin: 0;
     @include bp.xs-max {
-        font-size: 28px;
+        font-size: 27px;
     }
     @include bp.sm {
-        font-size: 45px;
+        font-size: 44px;
     }
     @include bp.lg {
-        font-size: 80px;
+        font-size: 78px;
+    }
+}
+
+.h1-english {
+    font-size: 36px;
+    @include bp.xs-max {
+        font-size: 32px;
+    }
+    @include bp.sm {
+        font-size: 48px;
+    }
+    @include bp.lg {
+        font-size: 90px;
     }
 }
 

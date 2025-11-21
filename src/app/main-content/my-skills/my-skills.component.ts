@@ -41,7 +41,14 @@ export class MySkillsComponent implements AfterViewInit {
       image: "./../../../assets/img/java-script.svg",
       name: "JavaScript"
     },
-
+    {
+      image: "./../../../assets/img/python.png",
+      name: "Python"
+    },
+    {
+      image: "./../../../assets/img/django.png",
+      name: "Django"
+    },
     {
       image: "./../../../assets/img/html.svg",
       name: "HTML"

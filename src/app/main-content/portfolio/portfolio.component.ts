@@ -31,6 +31,21 @@ export class PortfolioComponent implements AfterViewInit {
   projects = [
     {
       id: 3,
+      date: "06/2025",
+      imageMobile: "join-mobile.png",
+      imageTablet: "join-tablet.png",
+      imageMonitor: "join-monitor.png",
+      orientation: "portrait",
+      title: "Join",
+      skills: "Angular | TypeScript | Firebase | Git | HTML | SCSS",
+      description: "Project management tool inspired by the kanban system: Use the task manager to create and organize tasks using drag and drop functions. Assign users and categories. Organize and edit your contacts.",
+      descriptionGerman: "Projektmanagement-Tool nach dem Kanban-System: Erstellen und organisieren Sie Aufgaben mithilfe von Drag & Drop. Weisen Sie den Aufgaben Personen und Kategorien zu. Verwalten und bearbeiten Sie Ihre Kontakte.",
+      position: "right",
+      gitLink: "https://github.com/anitagasteiner/join",
+      webLink: "https://join.anita-gasteiner.at/"
+    },
+    {
+      id: 2,
       date: "11/2024",
       imageMobile: "demon-woods-mobile.png",
       imageTablet: "demon-woods-tablet.png",
@@ -40,24 +55,9 @@ export class PortfolioComponent implements AfterViewInit {
       skills: "OOP | JavaScript | Git |  HTML | CSS",
       description: "Simple jump and run game based on an object-oriented approach: Help the fairy to collect hearts and stones to fight against wraiths and a demon.",
       descriptionGerman: "Einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Zugang basiert: Helfen Sie der Fee dabei, Herzen und Steine zu sammeln, um gegen Geister und einen Dämon zu kämpfen.",
-      position: "right",
+      position: "left",
       gitLink: "https://github.com/anitagasteiner/demon_woods",
       webLink: "https://demon-woods.anita-gasteiner.at"
-    },
-    {
-      id: 2,
-      date: "07/2024",
-      imageMobile: "join-mobile.png",
-      imageTablet: "join-tablet.png",
-      imageMonitor: "join-monitor.png",
-      orientation: "portrait",
-      title: "Join",
-      skills: "JavaScript | Firebase | Git | HTML | CSS",
-      description: "Project management tool inspired by the kanban system: Use the task manager to create and organize tasks using drag and drop functions. Assign users and categories. Organize and edit your contacts.",
-      descriptionGerman: "Projektmanagement-Tool nach dem Kanban-System: Erstellen und organisieren Sie Aufgaben mithilfe von Drag & Drop. Weisen Sie den Aufgaben Personen und Kategorien zu. Verwalten und bearbeiten Sie Ihre Kontakte.",
-      position: "left",
-      gitLink: "https://github.com/anitagasteiner/join-239-final",
-      webLink: "https://join.anita-gasteiner.at/"
     },
     {
       id: 1,

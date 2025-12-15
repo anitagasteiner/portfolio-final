@@ -51,7 +51,7 @@ export class MySkillsComponent implements AfterViewInit {
     },
     {
       image: "./../../../assets/img/djangorest.svg",
-      name: "Django REST Framework"
+      name: "DRF"
     },
     {
       image: "./../../../assets/img/html.svg",
